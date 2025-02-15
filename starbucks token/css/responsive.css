@@ -1,0 +1,334 @@
+@media (max-width: 1600px){
+  
+    .metrics {
+            min-width: 4.3vw;
+            min-height: 4vh;
+        }
+    .time-number {
+            font-size: 1.4vw; 
+        }
+    .word-break {
+            font-size: 1vw;
+        }
+    
+}
+
+@media (max-width: 1400px){
+  
+    .metrics {
+            min-width: 4.3vw;
+            min-height: 4vh;
+        }
+    .time-number {
+            font-size: 1.4vw; 
+        }
+    .word-break {
+            font-size: 1vw;
+        }
+
+    .menu-container .menu-link {
+        font-size: 14px;
+        white-space: nowrap;
+    }    
+
+    .menu-container .menu-button {
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    .card-title {
+        font-size: 22px;
+    }
+    .balance p{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .card.buy .btn-success {
+        margin-top: 15px;
+        height: 50px;
+    }
+    .card.buy input {
+        height: 50px;
+    }
+    .card.buy span.input-group-text {
+        height: 50px;
+    }
+    .card.buy {
+        width: 45vw;
+    }
+    .card-roadmap {
+        width: unset;
+    }
+    .card-what-is p{
+        font-size: 14px;
+      }
+            
+      .card-what-is h3{
+        font-size: 22px;
+      }
+      section.faq{
+        min-height: 150vh;
+      }
+}
+
+@media (min-width: 992px) {
+    .d-md-none {
+        display: none !important;
+    }
+
+}
+
+@media (max-width: 992px){
+    .swiper-container {
+        width: 395px;
+        overflow: hidden;
+      }
+      .card-roadmap {
+        width: 395px;
+    }
+    .d-md-none {
+        display: block !important;
+    }
+    .metrics {
+            min-width: 4.3vw;
+            min-height: 4vh;
+        }
+    .time-number {
+            font-size: 1.4vw; 
+        }
+    .word-break {
+            font-size: 1vw;
+        }
+
+    .menu-container .menu-link {
+        font-size: 16px;
+        white-space: nowrap;
+        padding: 15px 0px;
+        width: 80%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }    
+    .menu-container{
+        flex-direction: column;
+        height: unset;
+        top:-10px;
+        margin-top: 0px;
+    }
+
+    .menu-container .menu-button {
+        font-size: 16px;
+        width: 80%;
+        margin-top: 15px;
+    }
+    .menu-logo{
+        display: none;
+    }
+    .mobile_adaptive {
+        flex-direction: column;
+        background-color: #131D15;
+        width: 100vw !important;
+        position: relative;
+        right: 8px;
+    }
+
+    .mobile_adaptive#adaptive-1{
+        padding-top: 70px;
+    }
+    .mobile_adaptive#adaptive-2{
+        padding-bottom: 70px;
+    }
+    .menu-wrapper {
+        position: absolute;
+        color: white;
+        top:0
+
+    }
+    .collapse:not(.show) {
+        display: none !important;
+    }
+    .bi.bi-x{
+        display: block;
+    }
+    .close-btn{
+        display: block;
+      }
+      .mobile-container{
+        display: flex;
+      }
+      .mobile-logo{
+        margin-right: 30px;
+      }
+
+      .card.buy{
+        width: unset;
+      }
+      .margin{
+        top: 0;
+      }
+      .half .col-md-12{
+        justify-content: center;
+        align-items: start !important;
+      }
+      .half .col-none{
+       display: none;
+      }
+
+      .card-what-is h3.flex-nowrap{
+        font-size: 22px;
+        white-space: inherit;
+      }
+      .what-is .col-4{
+        align-items: center !important;
+      }
+      .roadmap .col-lg-6{
+        display: flex;
+        justify-content: center;
+      }
+      .roadmap .col-md-8{
+        align-items: end !important;
+      }
+      .roadmap .col-lg-6 img{
+        max-width: 150%;
+        margin-left: 40px;
+      }
+      .container{
+        max-width: 780px;
+      }
+      .bg-siren{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: 
+            url(../image/bg/sirena.svg), 
+            url(../image/bg/dots.png),
+            url(../image/bg/light.png);
+        background-position: 
+            top center,
+            center,
+            top center;
+        background-repeat: 
+            no-repeat,
+            no-repeat,
+            no-repeat;
+        background-size: 
+            140vw 140vh,
+            100vw 100vh,
+            cover
+            ;
+    }
+    section.home-page{
+        min-height: 120vh;
+    }
+
+    section.economy{
+          min-height: 210vh;
+      }
+      section.faq{
+        min-height: 160vh;
+      }
+
+}
+
+@media (max-width: 768px){
+
+    .swiper-container {
+        width: 550px;
+        position: relative;
+        left: 55px;
+        max-height: 600px;
+      }
+      .chevrons{
+        position: relative;
+        left: 30px 
+      }
+      .card-roadmap {
+        width: 545px;
+    }
+    .card-what-is.order-md-3{
+        margin-top: 20px;
+    }
+
+    .container{
+        max-width: 540px;
+      }
+      .card.buy{
+        width: 90%;
+        margin-left: 30px;
+      }
+      .roadmap .col-lg-6 img{
+        width: 70%;
+        margin-left: 40px;
+      }
+      .metrics {
+        min-width: 17.3vw;
+        min-height: 10vh;
+    }
+    .time-number {
+        font-size: 6.4vw;
+    }
+    .word-break {
+        font-size: 4vw;
+    }
+    input#solanaAddress{
+        margin-top: 20px;
+    }
+    #solanainput{
+        margin-top: 20px;
+    }
+    .stbux{
+        position: absolute;
+        top: 10%;
+        left:0%;
+      
+    }
+
+}
+
+@media (max-width: 560px){
+    .swiper-container {
+        width: 360px;
+        left: -6%;
+      }
+      .chevrons{
+        position: relative;
+        left: 30px 
+      }
+      .card-roadmap {
+        width: 360px;
+    }
+    .card-what-is.order-md-1,
+    .card-what-is.order-md-3{
+        margin-left:  20px;
+        margin-right: 20px;
+    }
+    .modal-content-custom {
+        width: 360px;
+    }
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 520px){
+    .metrics {
+        min-height: 6vh;
+    }
+
+}
+
+
+@media (max-width: 470px){
+    .swiper-container {
+        left: 3%;
+      }
+}
+
+@media (max-width: 400px){
+    .swiper-container {
+        left: 9%;
+      }
+}
