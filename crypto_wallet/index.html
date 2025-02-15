@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="d-flex">
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <img src="images/menu.png" alt="Menu">
+          </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between mr-auto menu-language">
+                <div class="d-flex justify-content-center align-items-center no-desk">
+                    <button class="btn btn-primary mx-3 no-laptop">Deposit</button>     
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Русский</a>
+                            <a class="dropdown-item" href="#">Español</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                        <img src="images/logo.png" alt="Logo">
+                        <span class="link-text">Logodesign</span>
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-4 hide-menu">
+                <div class="d-flex flex-column w-100 justify-content-center align-items-center" id="no-desk">
+                    <img src="images/account.png" alt="Client Icon" class="client-icon mt-2">
+                    <p class="mb-0 font-weight-bold text-white">John Doe</p>
+                    <p class="mb-0 text-danger mb-3"><img src="images/shield.png" class="mr-2">Account not verified</p>
+                     
+                </div>
+                <li class="nav-item menu active">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                        <img src="images/dashboard.png" class="mx-3">
+                        <span class="link-text">Dashboard</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="deposit.html" class="nav-link d-flex align-items-center">
+                        <img src="images/deposit.png" class="mx-3">
+                        <span class="link-text">Deposit</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="withdrawal.html" class="nav-link d-flex align-items-center">
+                        <img src="images/withdrawal.png" class="mx-3">
+                        <span class="link-text">Withdrawal</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transactions.html" class="nav-link d-flex align-items-center">
+                        <img src="images/transactions.png" class="mx-3">
+                        <span class="link-text">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="settings.html" class="nav-link d-flex align-items-center">
+                        <img src="images/settings-svgrepo.png" class="mx-3">
+                        <span class="link-text">Settings</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                        <img src="images/logout-arrows.png" class="mx-3">
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="minimized mb-0 mr-2">Minimized menu</p>
+               
+                    <img src="images/hide-sidebar-horiz.png">
+              
+            </button>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="flex-grow-1 pt-0 px-3">
+            <div class="row">
+                <div class="header d-flex align-items-center justify-content-between px-4 py-3 mb-4">
+                    
+                    <div class="dashboard-title">
+                        <h1 class="m-0">Dashboard</h1>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        
+                        <img src="images/account.png" alt="Client Icon" class="client-icon mr-3">
+                       
+                        <div class="client-info text-left mr-3">
+                            <p class="mb-0 font-weight-bold text-white">John Doe</p>
+                            <p class="mb-0 text-danger"><img src="images/shield.png" class="mr-2">Account not verified</p>
+                        </div>
+                        
+                        <button class="btn btn-primary mr-3">Deposit</button>
+                        
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">Español</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12 d-flex">
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-between">
+                        <div class="content-block light-grey mb-3 pb-2 position-relative">
+                            <div class="block-content d-flex justify-content-between">
+          
+                                <div class="text-left">
+                                    <p class="small font-weight-bold mb-0">0.00003245 BTC</p>
+                                    <p class="smaller text-muted mb-1">Deposit</p>
+                                    <p class="large mb-1">$52,291</p>
+                                    <p class="small text-success mb-0">+0.25%</p>
+                                </div>
+    
+                                <canvas class="mt-auto" id="chart1"></canvas>
+                            </div>
+                         
+                            <i class="bi bi-arrow-down-left-circle-fill text-success position-absolute" style="top:5px; right: 25px; transform: rotate(180deg);  font-size: 24px;"></i>
+                        </div>
+                        <div class="content-block dark-grey mb-3 pb-2  position-relative">
+                          
+                            <div class="block-content d-flex justify-content-between">
+                               
+                                <div class="text-left">
+                                    <p class="small font-weight-bold mb-0">0 BTC</p>
+                                    <p class="smaller text-muted mb-1">Dynamic balance</p>
+                                    <p class="large mb-1">$0,00</p>
+                                    <p class="small text-danger mb-0">-0.00%</p>
+                                </div>
+                                <canvas class="mt-auto" id="chart2"></canvas>
+                            </div>
+                            <i class="bi bi-arrow-down-left-circle-fill text-danger position-absolute" style="top:5px; right: 25px; font-size: 24px;"></i>
+                        </div>
+                        <div class="content-block light-grey mb-3 pb-2 position-relative">
+                            <div class="block-content d-flex justify-content-between">
+                          
+                                <div class="text-left">
+                                    <p class="small font-weight-bold mb-0">0.00003245 BTC</p>
+                                    <p class="smaller text-muted mb-1">Deposit</p>
+                                    <p class="large mb-1">$52,291</p>
+                                    <p class="small text-success mb-0">+0.25%</p>
+                                </div>
+                                <canvas class="mt-auto" id="chart3"></canvas>
+                            </div>
+                            <i class="bi bi-arrow-down-left-circle-fill text-success position-absolute" style="top:5px; right: 25px; transform: rotate(180deg); font-size: 24px;"></i>
+                        </div>
+                    </div>
+                    <div class="col-6" >
+                        <div class="content-block pb-2 dark-grey" style="height: 95%;">
+                            <div class="graph-header">
+                              <h1>Fix balance</h1>
+                            </div>
+                            <div class = "d-flex justify-content-between align-items-center mobile-correct">
+                                <div class="d-flex flex-column">
+                                <p class="mb-0 mt-2 text-muted small">Bitcoin/BTC</p>
+                                <h2>$52,291</h2>
+                                </div>
+                                <div class="time-selector">
+                                <button class="active">1h</button>
+                                <button>3h</button>
+                                <button>1d</button>
+                                <button>1w</button>
+                                <button>1m</button>
+                                </div>
+                            </div>
+                            <canvas id="cryptoChart"></canvas>
+                        </div>
+                    
+                    </div>
+
+                </div>
+              
+                <div class="col-12 d-flex margin-correct">
+                    <div class="col-6">
+
+                    
+                    <div class="content-block dark-grey" style="height: unset;">
+                    
+                    
+                    <div class="table-block mt-0">
+                        <table class="table table-striped">
+                        <div class="d-flex justify-content-between align-items-center px-3 pb-3">
+                                    <div colspan="2" class="text-white">
+                                        Recent transactions
+                                    </div>
+                                    <div class="text-white">
+                                        <button class="btn view-all">
+                                            View
+                                        </button>
+                                    </div>
+                                </div>
+                
+                            <tbody>
+                                <tr data-toggle="collapse" data-target="#row1" class="accordion-toggle">
+                                    <td class="text-muted">05/12<br class="no-desk">/2024</td>
+                                    <td class="text-white position-relative"><i class="bi bi-arrow-down-left-circle-fill text-success position-absolute" style="left: -7px; transform: rotate(180deg);"></i> Deposit</td>
+                                    <td class="text-white">0.012320258</td>
+                                    <td><i class="bi bi-chevron-down text-white"></i></td>
+                                </tr>
+                                <tr id="row1" class="collapse content">
+                                  
+                                        <td colspan="4">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column text-left">
+                                                    <p>ID:</p>
+                                                    <p>Payment info:</p>
+                                                    <p>Asset:</p>
+                                                    <p>Status:</p>
+                                                </div>
+                                            
+                                            
+                                                <div class="d-flex flex-column text-right">
+                                                    <p>57463</p>
+                                                    <p class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</p>
+                                                    <p class="no-desk">....ahc82r</p>
+                                                    <p>BTC</p>
+                                                    <p class="text-success">Complete</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    
+                                </tr>
+                                <tr data-toggle="collapse" data-target="#row2" class="accordion-toggle">
+                                    <td class="text-muted">05/12<br class="no-desk">/2024</td>
+                                    <td class="text-white position-relative"><i class="bi bi-arrow-down-left-circle-fill text-danger position-absolute" style="left: -7px;"></i> Withdrawal</td>
+                                    <td class="text-white">100</td>
+                                    <td><i class="bi bi-chevron-down text-white"></i></td>
+                                </tr>
+                                <tr id="row2" class="collapse content">
+                                    <td colspan="4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex flex-column text-left">
+                                                <p>ID:</p>
+                                                <p>Payment info:</p>
+                                                <p>Asset:</p>
+                                                <p>Status:</p>
+                                            </div>
+                                        
+                                        
+                                            <div class="d-flex flex-column text-right">
+                                                <p>57463</p>
+                                                <p class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</p>
+                                                <p class="no-desk">....ahc82r</p>
+                                                <p>BTC</p>
+                                                <p class="text-success">Complete</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr data-toggle="collapse" data-target="#row3" class="accordion-toggle">
+                                    <td class="text-muted">05/12<br class="no-desk">/2024</td>
+                                    <td class="text-white position-relative"><i class="bi bi-arrow-down-left-circle-fill text-success position-absolute" style="left: -7px; transform: rotate(180deg);"></i> Deposit</td>
+                                    <td class="text-white">0.012320258</td>
+                                    <td><i class="bi bi-chevron-down text-white"></i></td>
+                                </tr>
+                                <tr id="row3" class="collapse content">
+                                  
+                                        <td colspan="4">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column text-left">
+                                                    <p>ID:</p>
+                                                    <p>Payment info:</p>
+                                                    <p>Asset:</p>
+                                                    <p>Status:</p>
+                                                </div>
+                                            
+                                            
+                                                <div class="d-flex flex-column text-right">
+                                                    <p>57463</p>
+                                                    <p class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</p>
+                                                    <p class="no-desk">....ahc82r</p>
+                                                    <p>BTC</p>
+                                                    <p class="text-success">Complete</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    
+                                </tr>
+                                <tr data-toggle="collapse" data-target="#row4" class="accordion-toggle">
+                                    <td class="text-muted">05/12<br class="no-desk">/2024</td>
+                                    <td class="text-white position-relative"><i class="bi bi-arrow-down-left-circle-fill text-danger position-absolute" style="left: -7px;"></i> Withdrawal</td>
+                                    <td class="text-white">100</td>
+                                    <td><i class="bi bi-chevron-down text-white"></i></td>
+                                </tr>
+                                <tr id="row4" class="collapse content">
+                                    <td colspan="4">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex flex-column text-left">
+                                                <p>ID:</p>
+                                                <p>Payment info:</p>
+                                                <p>Asset:</p>
+                                                <p>Status:</p>
+                                            </div>
+                                        
+                                        
+                                            <div class="d-flex flex-column text-right">
+                                                <p>57463</p>
+                                                <p class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</p>
+                                                <p class="no-desk">BTC</p>
+                                                <p class="text-success">Complete</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6">
+                <div class="content-block dark-grey">
+                    <table class="table table-borderless text-white">
+                        <tbody>
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon1.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0 mt-2">Ethereum</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-danger mb-0">-13.40%</p>
+                                    <p class="text-white small mb-0">0.12543 ETH</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-ethereum" height="34px"></canvas>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon2.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0">Bitcoin</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-danger mb-0">-13.40%</p>
+                                    <p class="text-white small mb-0">0.12543 BTC</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-bitcoin" height="34px"></canvas>
+                                </td>
+                            </tr>
+                           
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon3.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0">Litecoin</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right  py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-success mb-0">+14.25%</p>
+                                    <p class="text-white small mb-0">0.12543 ITC</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-litecoin" height="34px"></canvas>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon4.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0">Solana</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right  py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-danger mb-0">-13.40%</p>
+                                    <p class="text-white small mb-0">0.12543 SOL</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-solana" height="34px"></canvas>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon5.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0">Binance Coin</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right  py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-success mb-0">+12.00%</p>
+                                    <p class="text-white small mb-0">0.12543 BNB</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-binance" height="34px"></canvas>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle pr-0 py-1" style="width: 55px;">
+                                    <img src="images/crypto/icon6.png" alt="Icon" width="44" class="table-icon">
+                                </td>
+                                <td class="align-middle pl-0 py-1">
+                                    <p class="small mb-0">Ripple</p>
+                                    <p class="smaller text-muted mb-0">$3,245.03</p>
+                                </td>
+                                
+                                <td class="align-middle text-right  py-1">
+                                   <div class="d-flex flex-column text-right">
+                                    <p class="smaller text-success mb-0">+13.40%</p>
+                                    <p class="text-white small mb-0">0.12543 XLA</p>
+                                   </div>
+                                </td>
+                                <td class="width-correct py-1">
+                                    <canvas class="graf no-mobile" id="chart-ripple" height="34px"></canvas>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+                </div>
+                
+                
+                
+            </div>
+            <div class="footer text-center text-white py-3">
+                <p class="mb-0">© 2024 Copyright Logo Design. All rights reserved.</p>
+            </div>
+        </main>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
