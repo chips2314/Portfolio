@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deposit USDT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+        <main class="position-absolute">
+    
+            
+            <div class="d-flex justify-content-center">
+                <img src="image/buy_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg1">
+                <img src="image/bear_bull.png" class="img-fluid position-absolute" id="bg-bear">
+                <img src="image/sell_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg2">
+    
+                <div class="container position-relative">
+                    
+                    <div id="navbar"></div>
+                    
+                
+                <div class="d-flex justify-content-center mb-1 mt-5" id="row-column">
+                    <ul class="p-0 d-flex w-100" id="menu-list">
+                        
+                        <li><a class="active" href="#">Deposit</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center w-100">
+                    <form class="w-50 p-4 my-2" id="withdrawal-form">
+                
+                        <div class="form-group position-relative">
+                            <input type="text" class="form-control" id="fullWidthField" placeholder="Cash Balance">
+                            <div class="position-absolute rounded-right d-flex align-items-center justify-content-center" 
+                                    style="color:#F8D05F; font-weight: 300; bottom: 1px; right: 6px; width: 100px; height: 36px; border-radius: 0px 5px 5px 0px;">
+                                    1000 USDT
+                                </div>
+                        </div>
+                
+                   
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="dropdownField">Payment method </label>
+                                <select class="form-control" id="dropdownField" onchange="redirectToPage()">
+                                    <option value="deposit_usdt.html" selected>USDT wallet</option>
+                                    <option value="deposit_paypal.html" >Pay Pal</option>
+                                </select>
+                            </div>
+                
+                            <div class="form-group col-md-6 position-relative">
+                                <label for="halfField2">Amount</label>
+                                <input type="text" class="form-control pr-5" id="halfField2" placeholder="0">
+                                <div class="position-absolute text-white rounded-right d-flex align-items-center justify-content-center" 
+                                     style="background: #521A49; font-weight: 300; bottom: 1px; right: 6px; width: 79px; height: 36px; border-radius: 0px  5px 5px 0px ;">
+                                    USDT
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group col-md-6 position-relative">
+                                <label for="halfField2">Promo Code</label>
+                                <input type="text" class="form-control pr-5" id="halfField3" placeholder="Enter your promo code">
+                                <div class="position-absolute text-white rounded-right d-flex align-items-center justify-content-center" 
+                                     style="background: #3024A6; font-weight: 200; bottom: 1px; right: 6px; width: 106px; height: 36px; border-radius: 0px  5px 5px 0px ;">
+                                    Apply
+                                </div>
+                            </div>
+                        </div>
+                
+            
+                        <button type="submit" class="btn btn-primary btn-block w-100">Submit</button>
+                
+                    
+                        <div class="d-flex align-items-center mt-3">
+                            <span class="text-white">Wallet address: <span class="text-yellow"> 3JrD7PqKSuoa7Cr4iWwgD3WXbhRkmAcXHB</span></span><i class="bi bi-files text-yellow"></i>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <div id="footer"></div>
+    </main>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

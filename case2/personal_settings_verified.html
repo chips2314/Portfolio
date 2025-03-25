@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free Room All</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="d-flex flex-column bg-light" id="menu">
+            <div class="d-flex align-items-center w-100 px-3 pt-3 pb-2">
+                <div class="d-flex ms-3" id="user">
+                    <img src="image/icons-partners/player.png">
+                    <div>
+                        <h6 class="text-white mb-0">Davis</h6>
+                        <small class="text-white">ID <span class="text-dark-yellow">2114968</span></small>
+                    </div>
+                </div>
+                
+                <div class="ml-auto mr-1">
+                <button class="navbar-toggler border-0 p-3 d-md-none w-50" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+                    
+                </div>
+            </div>
+
+            <div class="collapse d-md-block" id="navbarTogglerContent">
+                <div class="px-2 d-flex justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <img src="image/icons-partners/shield.png" width="20px" height="20px">
+                            <p class="text-danger m-0 px-0 pt-1">Account not verified</p>
+                            
+                        </div>
+                        <p class="text-white m-0 px-4">Verify Now</p>
+                    </div>
+                    <div class="dropdown mx-3">
+                        <button class="btn btn-link dropdown-toggle d-flex justify-content-center align-items-center" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="mb-0">EN</p>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">RU</a>
+                            <a class="dropdown-item" href="#">IT</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 px-4">
+                        <button class="btn btn-warning d-flex align-items-center justify-content-center w-100 my-3">Marshal</button>
+                    </div>
+                </div>
+        
+                <div class="row gap-2 ml-2 mb-3 pt-2 pb-2" id="table">
+                    <div class="col-6 pr-0 pl-2">
+                        <div class="p-1 d-flex" style="border-bottom: 2px solid #6A3F3A; border-right: 2px solid #6A3F3A;">
+                            <img src="image/icons-partners/general-balance.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">General Balance</span>
+                                <p id="table-sum" class="mb-0">₮ 1,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-0 pr-2">
+                        <div class="p-1 d-flex" style="border-bottom: 2px solid #6A3F3A;">
+                            <img src="image/icons-partners/crash-balance.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">Cash Balance</span>
+                                <p id="table-sum" class="mb-0">₮ 1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pr-0 pl-2" style="border-right: 2px solid #6A3F3A;">
+                        <div class="p-1 d-flex">
+                            <img src="image/icons-partners/score-points.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">Score Points</span>
+                                <p id="table-sum" class="mb-0">✪ 234572</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-0 pr-2">
+                        <div class="p-1 d-flex">
+                            <img src="image/icons-partners/battlecoine.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">BattleCoins</span>
+                                <p id="table-sum" class="mb-0">100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+            <div class="d-grid">
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/deposit-menu.png" class="mx-2"> Deposit
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/deposit-menu.png" style="rotate: 180deg;" class="mx-2"> Withdrawal
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/transaction-menu.png" class="mx-2"> Transactions
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/settings-menu.png" class="mx-2"> Personal Settings
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/battles-menu.png" class="mx-2"> My Battles
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/leader-menu.png" class="mx-2"> Leaderboard
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/followers-menu.png" class="mx-2"> Followers
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/support-menu.png" class="mx-2"> Support
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main class="position-absolute">
+
+        
+        <div class="d-flex justify-content-center">
+            <img src="image/buy_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg1">
+            <img src="image/bear_bull.png" class="img-fluid position-absolute" id="bg-bear">
+            <img src="image/sell_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg2">
+
+            <div class="container position-relative">
+                
+                <div class="d-flex justify-content-between align-items-center w-100 mb-4 mt-3" id="header">
+                    <div class="d-flex justify-content-center align-items-center">
+                    <img src="image/logo.png" class="mr-3" id="logo">
+                    </div>
+                   
+                    <button type="button" class="btn btn-secondary active ml-4 position-relative" id="battle-room"><img src="image/b-icon.png" class="position-absolute"> BATTLE ROOM</button>
+                    
+                    <button type="button" class="btn btn-secondary ml-4 position-relative" id="vip-room"><img src="image/vr-icon.png" class="position-absolute">VIP ROOM</button>
+                    
+                    <button type="button" class="btn btn-secondary ml-4 position-relative" id="poker-room"><img src="image/pr-room.png" class="position-absolute">POKER ROOM</button>
+                    
+                    <button type="button" class="btn btn-secondary ml-4 position-relative" id="stock"><img src="image/vs-icon.png" class="position-absolute" >STOCK VS STOCK</button>
+    
+                    <div class="d-flex my-4" id="widgets">
+                        <div class = "d-flex align-items-center justify-content-center" id="widget">
+                            <div class="d-flex" style="border-right: 1px solid #F8D05F;">
+                                <img src="image/icons-partners/clock.png" class="px-1">
+                                <p class="m-0 px-1">Mar</p>
+                            </div>
+                            <div>
+                                <p class="m-0 px-1">10:27:54 AM</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-center justify-content-center ml-3" id="widget-reboot">
+                            <img src="image/icons-partners/reboot.png" >
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row justify-content-center">
+                    <div class="container-fluid w-100">
+                        <ul class="mt-3 mb-3 p-0 d-flex w-100" style="flex-wrap: wrap;" id="menu-list">
+
+                            <li><a class="active" href="#">Personal Settings</a></li>
+        
+                        </ul>  
+                        <form class="card p-4 mt-3" id="personal-settings">
+  
+                            <h5 class="mb-0">Personal Details</h5>
+                            <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class="form-control" id="id" placeholder="ID">
+                            </div>
+                            <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="nickname">Nickname</label>
+                                <input type="text" class="form-control" id="nickname" placeholder="Davis">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="firstname">First Name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="Michael">
+                            </div>
+                            </div>
+                            <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="Phillips">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" class="form-control" id="phone" placeholder="+0 000 000 0000">
+                            </div>
+                            </div>
+                            <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="country">Country</label>
+                                <input type="text" class="form-control" id="country" placeholder="United States">
+                            </div>
+                            </div>
+                    
+    
+                            <h5 class="mt-4">Change Password</h5>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="current-password">Current Password</label>
+                                <input type="password" class="form-control" id="current-password" placeholder="*******">
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="new-password">New Password</label>
+                                <input type="password" class="form-control" id="new-password" placeholder="*******">
+                                </div>
+                            </div>
+                            <div class="w-100 mt-4 d-flex justify-content-center">
+                                <button type="button" class="btn btn-warning btn-block">Save</button>
+                            </div>
+                            
+                            <h5 class="mt-1">Verify Account</h5>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="current-password">Document Type</label>
+                                <input type="text" class="form-control" id="current-password" placeholder="Passport">
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="new-password">Email Verification Code</label>
+                                <input type="text" class="form-control" id="new-password" placeholder="5678">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="w-100 d-flex justify-content-center">
+                                
+                                <button type="button" class="btn btn-primary btn-block ">
+                                <img src="image/icons-partners/reboot.png" width="17px">
+                                    Logout</button>
+                            </div>
+                        </form>
+                    </div>
+                   
+                  
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer d-flex align-items-center justify-content-center w-100" >
+            <div id="footer-icons"> 
+                <p id="footer-text">Regulations & Partners</p>
+                <div class ="d-flex">
+                    <div class="col-3"><img src="image/icons-partners/icon1.png"></div>
+                    <div class="col-3"><img src="image/icons-partners/icon2.png"></div>
+                    <div class="col-3"><img src="image/icons-partners/icon3.png"></div>
+                    <div class="col-3"><img src="image/icons-partners/icon4.png"></div>
+                </div>
+                <p id="footer-text" class="mt-4 mb-0">© 2024 StockBattle. All rights reserved.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

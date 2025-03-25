@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Modal Fade no-money-status (start) -->
+<div class="modal fade" id="no-money-status" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog mt-2 mb-2 modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark text-light">
+        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+            <img src="image/error.png">
+            <h6>There is not enough money in your balance to play</h6>
+            <button class="btn btn-light active mt-2">Go to Deposit page</button>    
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal Fade no-money-status (end) -->
+
+<!-- Modal Fade Welcome ModalS tatus (start) -->
+  <div class="modal fade" id="welcomeModalStatus" tabindex="-1" role="dialog" aria-labelledby="scorePointsLabel" aria-hidden="true">
+    <div class="modal-dialog mt-2 mb-2 modal-dialog-centered" role="document">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title w-100 text-center" id="scorePointsLabel">Score Points</h5>
+          <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body pt-1">
+  
+          <div class="text-center">
+            <table class="table" style="width: 305px !important;" >
+              <thead>
+                <tr class="text-center">
+                  <th><img src="image/icons-partners/star1.svg" alt="Marshal" class="img-fluid" width="30"> <span class="font-weight-bold" style="color: #FFD600;">Marshal</span><br>1000p</th>
+                  <th><img src="image/icons-partners/star2.svg" alt="General" class="img-fluid" width="30"> <span class="font-weight-bold" style="color: #BF9058;">General</span><br>500p</th>
+                  <th><img src="image/icons-partners/star3.svg" alt="Major" class="img-fluid" width="30"> <span class="font-weight-bold" style="color: #C4C4C4;">Major</span><br>250p</th>
+                  <th><img src="image/icons-partners/star4.svg" alt="Sergeant" class="img-fluid" width="30"> <span class="font-weight-bold position-relative" style="color: #9E69F5; right: 7px">Sergeant</span><br>100p</th>
+                  <th><img src="image/icons-partners/star5.svg" alt="Corporal" class="img-fluid" width="30"> <span class="font-weight-bold position-relative" style="color: #4FBC85; right: 5px">Corporal</span><br>50p</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td><span style="color: #F8D05F;">1st</span><br>12p</td>
+                  <td><span style="color: #F8D05F;">2nd</span><br>10p</td>
+                  <td><span style="color: #F8D05F;">3rd</span><br>8p</td>
+                  <td><span style="color: #F8D05F;">4th</span><br>7p</td>
+                  <td><span style="color: #F8D05F;">5th</span><br>6p</td>
+                </tr>
+                <tr>
+                  <td><span style="color: #F8D05F;">6th</span><br>5p</td>
+                  <td><span style="color: #F8D05F;">7th</span><br>4p</td>
+                  <td><span style="color: #F8D05F;">8th</span><br>3p</td>
+                  <td><span style="color: #F8D05F;">9th</span><br>2p</td>
+                  <td><span style="color: #F8D05F;">10th</span><br>1p</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          
+      </div>
+    </div>
+  </div>
+<!-- Modal Fade Welcome ModalS Status (end) -->
+
+
+
+    <header>
+        <div class="d-flex flex-column bg-light position-fixed h-100" id="menu">
+            <!-- Верхняя часть меню -->
+            <div class="d-flex align-items-center w-100 px-3 pt-3 pb-2">
+                <i class="bi bi-list fs-3"></i>
+                <div class="d-flex ms-3" id="user">
+                    <img src="image/icons-partners/player.png">
+                    <div>
+                        <h6 class="text-white mb-0">Davis</h6>
+                        <small class="text-white">ID <span style="color: #F8D05F;">2114968</span></small>
+                    </div>
+                </div>
+                
+                <div class="ml-auto mr-1">
+                       <!-- Бургер-кнопка -->
+                <button class="navbar-toggler border-0 p-3 d-md-none w-50" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </span>
+                </button>
+                    
+                </div>
+            </div>
+        
+         
+        
+            <!-- Выпадающий контент -->
+             
+            <div class="collapse d-md-block" id="navbarTogglerContent">
+                
+                <div class="px-2 d-flex justify-content-between">
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icons-partners/shield.png">
+                            <p class="text-danger m-0 px-0 pt-1">Account not verified</p>
+                            
+                        </div>
+                        <p class="text-white m-0 px-4">Verify Now</p>
+                    </div>
+                    <div class="dropdown mx-3">
+                        <button class="btn btn-link dropdown-toggle d-flex justify-content-center align-items-center" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="mb-0">EN</p>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">RU</a>
+                            <a class="dropdown-item" href="#">IT</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 px-4">
+                        <button class="btn btn-warning d-flex align-items-center justify-content-center w-100 my-3">Marshal</button>
+                    </div>
+                </div>
+        
+                <div class="row gap-2 ml-2 mb-3 pt-2 pb-2" id="table">
+                    <div class="col-6 pr-0 pl-2">
+                        <div class="p-1 d-flex" style="border-bottom: 2px solid #6A3F3A; border-right: 2px solid #6A3F3A;">
+                            <img src="image/icons-partners/general-balance.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">General Balance</span>
+                                <p id="table-sum" class="mb-0">₮ 1,500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-0 pr-2">
+                        <div class="p-1 d-flex" style="border-bottom: 2px solid #6A3F3A;">
+                            <img src="image/icons-partners/crash-balance.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">Cash Balance</span>
+                                <p id="table-sum" class="mb-0">₮ 1,000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pr-0 pl-2" style="border-right: 2px solid #6A3F3A;">
+                        <div class="p-1 d-flex">
+                            <img src="image/icons-partners/score-points.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">Score Points</span>
+                                <p id="table-sum" class="mb-0">✪ 234572</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 pl-0 pr-2">
+                        <div class="p-1 d-flex">
+                            <img src="image/icons-partners/battlecoine.png" width="25px" height="25px" class="mx-2 mt-2">
+                            <div>
+                                <span id="table-text">BattleCoins</span>
+                                <p id="table-sum" class="mb-0">100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+            <div class="d-grid">
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/deposit-menu.png" class="mx-2"> Deposit
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/deposit-menu.png" style="rotate: 180deg;" class="mx-2"> Withdrawal
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/transaction-menu.png" class="mx-2"> Tranactions
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/settings-menu.png" class="mx-2"> Personal Settings
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/battles-menu.png" class="mx-2"> My Battles
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/leader-menu.png" class="mx-2"> Leaderboard
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/followers-menu.png" class="mx-2"> Followers
+                    </button>
+                </div>
+                <div class="col-12 px-2 mb-3">
+                    <button class=" btn btn-light border d-flex align-items-center w-100">
+                        <img src="image/icons-partners/support-menu.png" class="mx-2"> Support
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <main class="position-absolute">
+
+        
+        <div class="d-flex justify-content-center">
+            <img src="image/buy_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg1">
+            <img src="image/bear_bull.png" class="img-fluid position-absolute" id="bg-bear">
+            <img src="image/sell_1.png" class="img-fluid position-absolute scalable" width="99vw" height="100vh" id="bg2">
+
+            <div class="container position-relative">
+                <div class="d-flex justify-content-center w-100 mb-4 mt-3" id="header">
+                    <div class="d-flex justify-content-center align-items-center">
+                    <img src="image/logo.png" class="mr-3" id="logo">
+                    </div>
+                    <div class="mt-4 d-flex justify-content-center align-items-center" id="buttons">
+                        <button type="button" class="btn btn-secondary active ml-3 mb-3 position-relative" id="battle-room"><img src="image/b-icon.png" style="position: absolute; left: -30px; bottom: 0;"> BATTLE ROOM</button>
+                        <button type="button" class="btn btn-secondary ml-3 mb-3 position-relative" id="vip-room"><img src="image/vr-icon.png" style="position: absolute; left: -30px; bottom: 5px;">VIP ROOM</button>
+                        <button type="button" class="btn btn-secondary ml-3 mb-3 position-relative" id="poker-room"><img src="image/pr-room.png" style="position: absolute; left: -28px; bottom: 0;">POKER ROOM</button>
+                        <button type="button" class="btn btn-secondary ml-3 mb-3 position-relative" id="stock"><img src="image/vs-icon.png" style="position: absolute; left: -20px; bottom: 0;">STOCK VS STOCK</button>
+                    </div>
+                    <div class="d-flex my-4" id="widgets">
+                        <div class = "d-flex align-items-center justify-content-center" id="widget">
+                            <div class="d-flex" style="border-right: 1px solid #F8D05F;">
+                                <img src="image/icons-partners/clock.png" class="px-1">
+                                <p class="m-0 px-1">Mar</p>
+                            </div>
+                            <div>
+                                <p class="m-0 px-1">10:27:54 AM</p>
+                            </div>
+                        </div>
+                        <div class = "d-flex align-items-center justify-content-center ml-3 mr-2" id="widget-reboot">
+                            <img src="image/icons-partners/reboot.png" >
+                        </div>
+                    </div>
+                </div>
+                <ul class="mt-5 mb-3 p-0 d-flex w-100" style="flex-wrap: wrap;" id="menu-list">
+                    <li class="br"></li>
+                    <li><a style="color: #F8D05F;" href="#">All</a></li>
+                    <li><a class="text-white" style="text-decoration: underline;" href="#">Open</a></li>
+                    <li><a style="color: #F8D05F;" href="#">Live</a></li>
+                    <li><a style="color: #F8D05F;" href="#">Fineshed</a></li>
+                    <li class="br"></li>
+                    <li><button class="btn btn-light active" style="width: 108px; height: 37px;"><a style="color: #F8D05F;" href="#">Pick 1 stock</a></button></li>
+                    <li><img src="image/icons-partners/arrows.png"></li>
+                    <li><button class="btn btn-dark" style="width: 108px;"><a style="color: #F8D05F;" href="#">Pick 3 stocks</a></button></li>
+                    <li><img src="image/icons-partners/question.png"></li>
+                </ul>
+                <div class="row">
+                    
+                    <div class="col-3 p-0 mx-3 position-relative grid" id="battle-card">
+                        <h1 class="mt-2 mb-0">Free</h1>
+                        <h2 class="mb-0">& win $5</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <p class="mt-2 mb-1">5 free room</p>
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png">
+                            <p>Limit of Player:<span style="color: #fff;">50</span></p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;" id="play">Enter</button>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$10</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$50</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$100</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$250</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$500</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h1 class="mt-2 mb-0">Play</h1>
+                        <h2 class="mb-0">$1000</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                        <div class="d-flex flex-column align-items-center w-100">
+                            <img src="image/battle-card-icon.png" width="50px">
+                            <p><span style="color: #fff;">8</span> players joined</p>
+                            <button class="btn btn-light active" style="width: 267px; height: 37px;">Enter</button>
+                            <button class="btn btn-dark mt-2" style="width: 267px; height: 37px;">View Players</button>
+                            <small class="mt-2">Starts in <span style="color: #fff;">6h 29m 49s</span></small>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 mx-3 position-relative" id="battle-card">
+                        <h2 class="mb-0">Players Vip Battles</h2>
+                        <hr style="width: 116px;">
+                        <hr style="width: 60px;">
+                            <div class="table-responsive" style="max-height: 236px; overflow-y: auto;">
+                              <table class="table table-borderless">
+                                <tbody>
+                       
+                                  <tr>
+                                    <td class="align-middle">
+                                      <div class="d-flex align-items-center">
+                                        <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; background: #FFD600 !important;"><img src="image/icons-partners/player2.png" width="23px"></div>
+                                        <p class="ml-2">John</p>
+                                      </div>
+                                    </td>
+                                    <td class="text-right text-muted align-middle"><p class="text-warning ">10:27:54</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2" class="pl-3 text-left"><p>Created <span style="color: #fff;">1vs1, 1/2</span>  joined, <span style="color: #fff;">A</span> group</p></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="align-middle">
+                                        <div class="d-flex align-items-center">
+                                          <p class="ml-1">Bet: <span style="color: #fff;">$150</span></p>
+                                        </div>
+                                      </td>
+                                      <td class="text-right text-success align-middle"><a href="#">Join now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="d-flex justify-content-center">
+                                            <hr>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle">
+                                          <div class="d-flex align-items-center">
+                                            <div class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; background: #BF9058 !important;"><img src="image/icons-partners/player2.png" width="23px"></div>
+                                            <p class="ml-2">John</p>
+                                          </div>
+                                        </td>
+                                        <td class="text-right text-muted align-middle"><p class="text-warning text-right">10:27:54</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="2" class="pl-3 text-align-left"><p>Created <span style="color: #fff;">1vs1, 1/2</span>  joined, <span style="color: #fff;">A</span> group</p></td>
+                                      </tr>
+                                      <tr>
+                                        <td class="align-middle">
+                                            <div class="d-flex align-items-center">
+                                              <p class="ml-1">Bet: <span style="color: #fff;">$150</span></p>
+                                            </div>
+                                          </td>
+                                          <td class="text-right text-success align-middle"><a href="#">Join now</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <div class="d-flex justify-content-center">
+                                                <hr>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                  
+                                        <tr>
+                                            <td class="align-middle">
+                                              <div class="d-flex align-items-center">
+                                                <div  class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width: 30px; height: 30px; background: #C4C4C4 !important;"><img src="image/icons-partners/player2.png" width="23px"></div>
+                                                <p class="ml-2">John</p>
+                                              </div>
+                                            </td>
+                                            <td class="text-right text-muted align-middle"><p class="text-warning text-right">10:27:54</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2" class="pl-3 text-align-left"><p>Created <span style="color: #fff;">1vs1, 1/2</span>  joined, <span style="color: #fff;">A</span> group</p></td>
+                                          </tr>
+                                          <tr>
+                                            <td class="align-middle">
+                                                <div class="d-flex align-items-center">
+                                                  <p class="ml-1">Bet: <span style="color: #fff;">$150</span></p>
+                                                </div>
+                                              </td>
+                                              <td class="text-right text-success align-middle"><a href="#">Join now</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div class="d-flex justify-content-center">
+                                                    <hr>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer position-relative d-flex align-items-center justify-content-center w-100" style="width: 100%; height:127px; bottom: 0; margin-top: 50px; left: 0px !important;">
+            <div class="position-relative" id="footer-icons"> 
+                <p id="footer-text">Regulations & Partners</p>
+                <div class ="d-flex">
+                    <div class="col-3"><img src="image/icons-partners/icon1.png"></div>
+                    <div class="col-3"><img src="image/icons-partners/icon2.png"></div>
+                    
+                    <div class="col-3"><img src="image/icons-partners/icon3.png"></div>
+                    <div class="col-3"><img src="image/icons-partners/icon4.png"></div>
+                </div>
+                <p id="footer-text" class="mt-4 mb-0">© 2024 StockBattle. All rights reserved.</p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
