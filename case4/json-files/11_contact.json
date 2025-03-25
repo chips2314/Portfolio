@@ -1,0 +1,13 @@
+{
+  "title": "Contact us 📢",
+  "form_fields": {
+    "name": "Your name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Your message.."
+  },
+  "button": {
+    "text": "Send Message",
+    "icon": "📢"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "footer": {
+    "logo": "../assets/images/logo-light.svg",
+    "description": "LION TOKEN emerged as the ultimate celebration of community and creativity in the crypto space!",
+    "links": [
+      { "title": "About us", "href": "#about" },
+      { "title": "How to buy Tokens?", "href": "#features" },
+      { "title": "Our Mission", "href": "#our-mission" },
+      { "title": "Why our Meme coin", "href": "#why-our-token" },
+      { "title": "Buy Now", "href": "#address" },
+      { "title": "Tokenomics", "href": "#tokenomics" },
+      { "title": "Subscribe", "href": "#subscribe" },
+      { "title": "FAQs", "href": "#faq" },
+      { "title": "Contact Address", "href": "#main-contact" }
+    ],
+    "footer_bottom": {
+      "text": "MuchWOW © 2025, All rights reserved.",
+      "privacy": "page-privacy.html",
+      "terms": "page-terms.html"
+    }
+  }
+}
