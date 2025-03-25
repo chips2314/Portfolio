@@ -1,0 +1,28 @@
+<svg width="81" height="52" viewBox="0 0 81 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_541_20)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 0C27.9418 0 36 8.05824 36 18C36 27.9418 27.9418 36 18 36C8.05824 36 0 27.9418 0 18C0 8.05824 8.05824 0 18 0Z" fill="#F8D05F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 10.08C20.7835 10.08 23.04 12.3365 23.04 15.12C23.04 17.9035 20.7835 20.16 18 20.16C15.2165 20.16 12.96 17.9035 12.96 15.12C12.96 12.3365 15.2165 10.08 18 10.08Z" fill="#1F0D15"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18 23.04C24.7594 23.04 30.24 28.08 30.24 28.08C30.24 28.08 24.7594 33.12 18 33.12C11.2407 33.12 5.76001 28.08 5.76001 28.08C5.76001 28.08 11.2407 23.04 18 23.04Z" fill="#1F0D15"/>
+</g>
+<g clip-path="url(#clip1_541_20)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63 0C72.9418 0 81 8.05824 81 18C81 27.9418 72.9418 36 63 36C53.0582 36 45 27.9418 45 18C45 8.05824 53.0582 0 63 0Z" fill="#F8D05F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63 10.08C65.7835 10.08 68.04 12.3365 68.04 15.12C68.04 17.9035 65.7835 20.16 63 20.16C60.2165 20.16 57.96 17.9035 57.96 15.12C57.96 12.3365 60.2165 10.08 63 10.08Z" fill="#1F0D15"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M63 23.04C69.7594 23.04 75.24 28.08 75.24 28.08C75.24 28.08 69.7594 33.12 63 33.12C56.2407 33.12 50.76 28.08 50.76 28.08C50.76 28.08 56.2407 23.04 63 23.04Z" fill="#1F0D15"/>
+</g>
+<g clip-path="url(#clip2_541_20)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 16C49.9418 16 58 24.0582 58 34C58 43.9418 49.9418 52 40 52C30.0582 52 22 43.9418 22 34C22 24.0582 30.0582 16 40 16Z" fill="#F8D05F"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 26.08C42.7835 26.08 45.04 28.3365 45.04 31.12C45.04 33.9035 42.7835 36.16 40 36.16C37.2165 36.16 34.96 33.9035 34.96 31.12C34.96 28.3365 37.2165 26.08 40 26.08Z" fill="#1F0D15"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 39.04C46.7594 39.04 52.24 44.08 52.24 44.08C52.24 44.08 46.7594 49.12 40 49.12C33.2407 49.12 27.76 44.08 27.76 44.08C27.76 44.08 33.2407 39.04 40 39.04Z" fill="#1F0D15"/>
+</g>
+<defs>
+<clipPath id="clip0_541_20">
+<rect width="36" height="36" fill="white"/>
+</clipPath>
+<clipPath id="clip1_541_20">
+<rect width="36" height="36" fill="white" transform="translate(45)"/>
+</clipPath>
+<clipPath id="clip2_541_20">
+<rect width="36" height="36" fill="white" transform="translate(22 16)"/>
+</clipPath>
+</defs>
+</svg>
