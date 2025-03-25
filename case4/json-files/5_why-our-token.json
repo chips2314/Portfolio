@@ -3,32 +3,32 @@
   "images": [
     {
       "class": "position-absolute start-0 w-250px xl:w-auto",
-      "src": "../assets/images/common/cloud-01.svg",
+      "src": "/Portfolio/case4/assets/images/common/cloud-01.svg",
       "alt": "victor",
       "style": "top: 11%"
     },
     {
       "class": "position-absolute end-0 w-200px xl:w-auto",
-      "src": "../assets/images/common/cloud-02.svg",
+      "src": "/Portfolio/case4/assets/images/common/cloud-02.svg",
       "alt": "victor",
       "style": "bottom: 6%"
     }
   ],
   "features": [
     {
-      "image": "../assets/images/home-three/07.svg",
+      "image": "/Portfolio/case4/assets/images/home-three/07.svg",
       "title": "COMMUNITY",
       "description": "Built by the community, for the community.",
       "rotate": "rotate-1"
     },
     {
-      "image": "../assets/images/home-three/08.svg",
+      "image": "/Portfolio/case4/assets/images/home-three/08.svg",
       "title": "DEFLATIONARY",
       "description": "Automatic burn mechanism increases value over time.",
       "rotate": "-rotate-1"
     },
     {
-      "image": "../assets/images/home-three/09.svg",
+      "image": "/Portfolio/case4/assets/images/home-three/09.svg",
       "title": "100% SECURE",
       "description": "Audited smart contract with locked liquidity.",
       "rotate": "rotate-1"
