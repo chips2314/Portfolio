@@ -163,7 +163,7 @@ function copyToClipboardSecond() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch('../../json-files/10_buy_now.json')
+  fetch('/Portfolio/case4/json-files/10_buy_now.json')
     .then(response => response.json())
     .then(data => {
       const contact = data.contact;
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-fetch('../../json-files/7_tokenomics.json')
+fetch('/Portfolio/case4/json-files/7_tokenomics.json')
   .then(response => response.json())
   .then(data => {
     document.getElementById('tokenomics-title').textContent = data.title;
@@ -233,7 +233,7 @@ fetch('../../json-files/7_tokenomics.json')
   .catch(error => console.error('Error loading tokenomics:', error));
 
 
-  fetch('../../json-files/5_why-our-token.json')
+  fetch('/Portfolio/case4/json-files/5_why-our-token.json')
   .then(response => response.json())
   .then(data => {
     // Set title
@@ -263,7 +263,7 @@ fetch('../../json-files/7_tokenomics.json')
   })
   .catch(error => console.error('Error loading why-our-token data:', error));
 
-  fetch('../../json-files/8_subscribe.json')
+  fetch('/Portfolio/case4/json-files/8_subscribe.json')
   .then(response => response.json())
   .then(data => {
  
@@ -280,7 +280,7 @@ fetch('../../json-files/7_tokenomics.json')
   })
   .catch(error => console.error('Error loading subscribe data:', error));
 
-  fetch('../../json-files/9_faq.json')  
+  fetch('/Portfolio/case4/json-files/9_faq.json')  
   .then(response => response.json())
   .then(data => {
  
@@ -306,7 +306,7 @@ fetch('../../json-files/7_tokenomics.json')
   })
   .catch(error => console.error('Error loading FAQ:', error));
   document.addEventListener("DOMContentLoaded", function () {
-    fetch('../../json-files/11_contact.json')  
+    fetch('/Portfolio/case4/json-files/11_contact.json')  
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -335,7 +335,7 @@ fetch('../../json-files/7_tokenomics.json')
                 const li = document.createElement("li");
                 li.innerHTML = `
                     <a class="w-48px lg:w-56px xl:w-64px hover:-rotate-3" href="${link.url}">
-                        <img src="../assets/images/common/${link.icon}" alt="${link.platform}">
+                        <img src="/Portfolio/case4/assets/images/common/${link.icon}" alt="${link.platform}">
                     </a>
                 `;
                 socialLinksContainer.appendChild(li);
@@ -345,7 +345,7 @@ fetch('../../json-files/7_tokenomics.json')
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  fetch('../../json-files/4_our-mission.json')  
+  fetch('/Portfolio/case4/json-files/4_our-mission.json')  
       .then(response => {
           if (!response.ok) {
               throw new Error(`HTTP error! Status: ${response.status}`);
@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch('../../json-files/12_footer.json')
+    fetch('/Portfolio/case4/json-files/12_footer.json')
       .then(response => response.json())
       .then(data => {
         const footer = data.footer;
@@ -466,7 +466,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   async function loadConfig() {
     try {
-        const response = await fetch('../../json-files/6_address.json');
+        const response = await fetch('/Portfolio/case4/json-files/6_address.json');
         const config = await response.json();
 
  
