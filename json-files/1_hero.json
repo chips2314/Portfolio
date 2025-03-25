@@ -1,0 +1,17 @@
+{
+  "title": "Strategic Partnerships",
+  "highlight": "Partnerships",
+  "image": "../assets/images/home-three/01.svg",
+  "buttons": [
+    {
+      "text": "Buy Token",
+      "href": "#address",
+      "gradient": "from-secondary to-tertiary"
+    },
+    {
+      "text": "Join Us",
+      "href": "#subscribe",
+      "gradient": "from-fifth to-quaternary"
+    }
+  ]
+}

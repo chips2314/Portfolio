@@ -1,0 +1,44 @@
+{
+  "section": {
+    "subtitle": "How to get started!",
+    "title": "How to buy Lion Tokens"
+  },
+  "features": [
+    {
+      "number": "1",
+      "image": "../assets/images/home-three/03.svg",
+      "title": "Connect your wallet",
+      "description": "Link your crypto wallet to begin your adventure with Lion Meme Coin."
+    },
+    {
+      "number": "2",
+      "image": "../assets/images/home-three/04.svg",
+      "title": "Exchange some coins",
+      "description": "Swap your favorite cryptocurrency for Lion Meme Coin with ease and security."
+    },
+    {
+      "number": "3",
+      "image": "../assets/images/home-three/05.svg",
+      "title": "Start buying & selling",
+      "description": "Engage in the trading process and join the ever-growing Lion Meme Coin community."
+    }
+  ],
+  "stats": [
+    {
+      "value": "2024",
+      "label": "Founded year"
+    },
+    {
+      "value": "10%",
+      "label": "Return on investment"
+    },
+    {
+      "value": "5K+",
+      "label": "Community members"
+    },
+    {
+      "value": "1M+",
+      "label": "Tokens in circulation"
+    }
+  ]
+}
