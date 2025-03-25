@@ -1,6 +1,6 @@
 {
   "footer": {
-    "logo": "../assets/images/logo-light.svg",
+    "logo": "/Portfolio/case4/assets/images/logo-light.svg",
     "description": "LION TOKEN emerged as the ultimate celebration of community and creativity in the crypto space!",
     "links": [
       { "title": "About us", "href": "#about" },
