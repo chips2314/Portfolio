@@ -55,7 +55,7 @@ function copyToClipboardSecond() {
 
   function loadContent() {
     console.log('Работает')
-    fetch('../../json-files/2_about.json')
+    fetch('/Portfolio/case4/json-files/2_about.json')
       .then(response => response.json())  
       .then(data => {
       
@@ -88,7 +88,7 @@ function copyToClipboardSecond() {
   window.onload = loadContent;
 
   document.addEventListener("DOMContentLoaded", function () {
-    fetch('../../json-files/3_features.json')
+    fetch('/Portfolio/case4/json-files/3_features.json')
         .then(response => response.json())
         .then(data => {
           
@@ -140,7 +140,7 @@ function copyToClipboardSecond() {
         });
 
         // hero.js
-    fetch('../../json-files/1_hero.json')
+    fetch('/Portfolio/case4/json-files/1_hero.json')
     .then(response => response.json())
     .then(data => {
       document.getElementById('hero_title').innerHTML = `
