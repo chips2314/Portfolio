@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Stbux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preload" href="fonts/SoDo/SoDoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="cabinet_bg">
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="d-flex align-items-center">
+                <img src="image/avatar.svg" width="50" class="mr-3">
+                <span>Kornev Sergey</span>
+            </div>
+            <span class="close-chat" id="closeChat">×</span>
+        </div>
+    
+        <div class="chat-body">
+          
+            <div class="user-message-container">
+                <div class="message user-message">Hello, how are you doing?</div>
+                <span class="message-time">08:15 AM</span>
+            </div>
+    
+   
+            <div class="admin-message-container">
+                <div class="d-flex align-items-center">
+                    <img src="image/admin.svg" class="mr-2">
+                    <p class="admin-name">Admin</p>
+                </div>
+                <div class="message admin-message">I'm doing well, thank you! How can I help you today?</div>
+                <span class="message-time">08:16 AM</span>
+            </div>
+    
+        
+            <div class="user-message-container">
+                <div class="message user-message">I have a question about the return policy for a product I purchased.</div>
+                <span class="message-time">Just Now</span>
+            </div>
+        </div>
+    
+        <div class="chat-footer">
+            <button class="emoji-btn"><i class="bi bi-emoji-smile"></i></button>
+            <input type="text" placeholder="Reply ...">
+            <button class="attachment-btn">
+                <img src="image/icons/image.svg">
+            </button>
+            <button class="send-btn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+    <div class="info-block" id="infoBlock">
+        <button class="close-btn-modal" id="closeInfoBlock"><i class="bi bi-x"></i></button>
+        
+        <h5 class="text-center font-weight-bold">
+            To purchase STBUX tokens on the Solana platform, follow these simple steps:
+        </h5>
+    
+        <div class="row text-center mt-3">
+            <div class="col-md-3 p-0">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="step-number">1</div>
+                    <div class="font-weight-bold">Set Up a Wallet</div>
+                </div>
+                <ul class="list mt-2">
+                    <li>Download a Solana-compatible wallet</li>
+                    <li>Generate your unique Solana address within the wallet</li>
+                </ul>
+            </div>
+            <div class="col-md-3 p-0">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="step-number">2</div>
+                    <div class="font-weight-bold">Fund Your Wallet</div>
+                </div>
+                <ul class="list mt-2">
+                    <li>Transfer SOL (Solana) cryptocurrency to your wallet </li>
+                    <li>You can purchase SOL on centralized exchanges like Binance, Coinbase, or Kraken and send it to your wallet address</li>
+                </ul>
+            </div>
+            <div class="col-md-3 p-0">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="step-number">3</div>
+                    <div class="font-weight-bold">Connect Your Wallet</div>
+                </div>
+                <ul class="list mt-2">
+                    <li>Visit our official website and click the "Connect Wallet" button </li>
+                    <li>Authorize the connection to your wallet to enable the transaction</li>
+                </ul>
+            </div>
+            <div class="col-md-3 p-0">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="step-number">4</div>
+                    <div class="font-weight-bold">Purchase STBUX Tokens</div>
+                </div>
+                <ul class="list mt-2">
+                    <li>Purchase STBUX Tokens Enter the amount of SOL you want to exchange for STBUX  </li>
+                    <li>Confirm the transaction by clicking the "Buy with SOL" button</li>
+                    <li>Your purchased STBUX tokens will be sent to your wallet immediately after confirmation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+        <main>
+            <div class="light"></div>
+                <div class="mobile-container">
+                    
+                    <nav class="navbar navbar-dark">
+                        <a href="#" class="btn btn-primary menu-button" id="buySTBUX">Logout</a>
+                        <div class="mobile-logo text-primary">
+                            <img class="logo" src="image/logo.svg">
+                        </div>
+                        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#mobileMenu" id="openMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+ 
+                    <div class="menu-wrapper d-flex justify-content-center collapse"  id="mobileMenu">
+                        
+                        <button class="close-btn" id="closeMenu"><i class="bi bi-x"></i></button>
+                        <div class="container p-0">
+                            <div class="menu-container justify-content-start pl-0">
+
+                            <div class="d-flex align-items-center justify-content-start w-100 mobile_adaptive">
+                                <div class="menu-logo text-primary">
+                                    <img class="logo" src="image/logo.svg">
+                                </div>
+                                <a href="dashboard.html" class="menu-link ">Dashboard</a>
+                                <a href="buy-stbux.html" class="menu-link active">Buy STBUX</a>
+                                <a href="deposit.html" class="menu-link ">Deposit</a>
+                                <a href="withdrawal.html" class="menu-link ">Withdrawal</a>
+                                <a href="taransactions.html" class="menu-link ">Transactions</a>
+                                <a href="settings.html" class="menu-link ">Settings</a>
+                                
+                            </div>
+                            <a href="#" class="btn btn-primary menu-button" id="buySTBUX-2">Logout</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container top-element px-25">
+                        
+                        <div class="row justify-content-between">
+                            <div class="col-lg-12 text-green card-green-transparent d-flex align-items-center justify-content-center my-1 py-2" style="max-width: 100%; height: 5vh;" id="openInfoBlock">
+                                How to Buy STBUX Tokens<i class="bi bi-question-circle fs-3 mx-2"></i>
+                            </div>
+                            <div class="col-lg-12 text-green card-green-transparent d-flex align-items-center justify-content-center my-1 py-1" style="max-width: 100%; height: 5vh;">
+                                <button class="w-button position-relative">
+                                    <img src="image/Phantom.svg" height="100%">
+                                </button>
+                                <button class="w-button position-relative">
+                                    <img src="image/Trust.svg" height="100%">
+                                </button>
+                            </div>
+                            <div class="col-lg-12 card-green d-flex justify-content-center my-1 py-2" style="max-width: 100%; height: 32.5vh;">
+
+                                <form class="w-50 buy-stbux-form">
+
+                                    <div class="row mb-3">
+                                        <div class="col-6 mt-md-0">
+                                            <label class="form-label">Deposit amount</label>
+                                            <div class="input-group position-relative">                      
+                                                <input type="text" id="solanaAddress" class="form-control" placeholder="Solana Address">
+                                                <div class="input-group-append">
+                                                  <span class="input-group-text"  id="solanainput">
+                                                    <img src="image/icons/solana.svg" alt="Solana Icon">
+                                                  </span>
+                                                </div>
+                                              </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Deposit amount</label>
+                                            <input type="text" class="form-control" placeholder="0">
+                                        </div>
+                                    </div>    
+                                    <div class="row mb-2">
+                                        <div class="col-6">
+                                            <button class="btn btn-block btn-success mt-0" id="openModal-2">Connect Your Wallet</button>
+                                        </div>
+                                        <div class="col-6">
+                                            <button class="btn btn-block btn-success mt-0"><img src="image/icons/solana.svg" alt="Solana Icon" width="30">Get STBUX with SOL</button>
+                                        </div>
+                                    </div>                                  
+                                    <div class="mt-1 text-center balance">
+                                        <p>SOL: 0.381 SOL / $80.11</p>
+                                        <div class="progress my-2">
+                                            <div class="progress-bar" role="progressbar">SALE: 0%</div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <p>Purchased: 0 STBUX</p>
+                                            <p>Stakeable: 0 STBUX</p>
+                                        </div>
+                                    </div>
+
+                                </form>
+                                
+                            </div> 
+                            <div class="w-100" >
+                                <div class="green-table p-2 mt-0 no-mobile-sm" style="height: 33.5vh;">
+                                    <div class="d-flex justify-content-between text-green align-items-center px-2 py-2" style="font-size: 14px;">
+                                        Token Transactions
+                                    </div>
+                                    <div class="table-block p-2 mt-0" >
+                                        <table class="table table-borderless table-hover text-green " style="font-size: 14px;">
+        
+                                            <thead>
+                                            <tr class="text-green" >
+                                                <th scope="col" style="width: 150px;" class="no-mobile">Date</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Balance/Value</th>
+                                                <th scope="col">Wallet</th>
+                                                <th scope="col">Price</th>
+                                                <th scope="col" class="text-right">24h</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td><img src="image/inner_artwork.svg" width="25" class="pr-1">Starbucks Coffee</td>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td>
+                                                    <span class="no-mobile-md">s6ksk7rhfbgyfghuc7egn46djdybnury4dhj4l3</span>
+                                                    <span class="no-desk-md">....dhj4l3djdybnury4dhj4l3</span>
+                                                </td>
+                                                <td>$76,780.01</td>
+                                                <td class="text-bright text-right">+0.49%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td><img src="image/inner_artwork.svg" width="25" class="pr-1">Starbucks Coffee</td> 
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td>
+                                                    <span class="no-mobile-md">s6ksk7rhfbgyfghuc7egn46djdybnury4dhj4l3</span>
+                                                    <span class="no-desk-md">....dhj4l3djdybnury4dhj4l3</span>
+                                                </td>
+                                                <td>$76,780.01</td>
+                                                <td class="text-bright text-right">+0.49%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td><img src="image/inner_artwork.svg" width="25" class="pr-1">Starbucks Coffee</td>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td>
+                                                    <span class="no-mobile-md">s6ksk7rhfbgyfghuc7egn46djdybnury4dhj4l3</span>
+                                                    <span class="no-desk-md">....dhj4l3djdybnury4dhj4l3</span>
+                                                </td>
+                                                <td>$76,780.01</td>
+                                                <td class="text-bright text-right">+0.49%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td><img src="image/inner_artwork.svg" width="25" class="pr-1">Starbucks Coffee</td>
+                                                <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                                <td>
+                                                    <span class="no-mobile-md">s6ksk7rhfbgyfghuc7egn46djdybnury4dhj4l3</span>
+                                                    <span class="no-desk-md">....dhj4l3djdybnury4dhj4l3</span>
+                                                </td>
+                                                <td>$76,780.01</td>
+                                                <td class="text-bright text-right">+0.49%</td>
+                                            </tr>
+                                        
+                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div> 
+                                    <!-- Mobile Table -->
+                                    <div class="green-table fix p-2 mt-0 no-desk-sm" style="height: 33.5vh;">
+                                        <div class="d-flex justify-content-between text-green align-items-center px-2 py-2" style="font-size: 14px;">
+                                            Token Transactions
+                                        </div>
+                                        <div class="table-block p-2 mt-0" >
+                                            <table class="table table-hover text-green">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Date</th>
+                                                        <th scope="col">Type</th>
+                                                        <th scope="col">Balance/Value</th>
+                                                        <th class="text-right" scope="col">24h</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="main-row" data-bs-toggle="collapse" data-bs-target="#details1">
+                                                        <td>04.01.2025<br> <span class="text-success">12:27</span></td>
+                                                        <td class="pt-4"><img src="image/inner_artwork.svg" width="25"></td>
+                                                        <td>0.0064382 <br>STBUX<br> <span class="text-bright">$0.7221</span></td>
+                                                        <td class="d-flex justify-content-between pt-4">+0.49% <i class="bi bi-chevron-down"></i></td>
+                                                    </tr>
+                                                    <tr class="collapse hidden-row border-0" id="details1">
+                                                       
+                                                        <td colspan="3">
+                                                            <strong>Wallet:</strong> 3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r <br>
+                                                            <strong>Price:</strong> $76,780.01 <br>
+                                                            <strong>Date:</strong> 2024-05-12 18:36
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr class="main-row" data-bs-toggle="collapse" data-bs-target="#details2">
+                                                        <td>04.01.2025<br> <span class="text-success">12:27</span></td>
+                                                        <td class="pt-4"><img src="image/inner_artwork.svg" width="25"></td>
+                                                        <td>0.0064382 <br>STBUX<br> <span class="text-bright">$0.7221</span></td>
+                                                        <td class="d-flex justify-content-between pt-4">+0.49% <i class="bi bi-chevron-down"></i></td>
+                                                    </tr>
+                                                    <tr class="collapse hidden-row border-0" id="details2">
+                                                       
+                                                        <td colspan="3">
+                                                            <strong>Wallet:</strong> 3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r <br>
+                                                            <strong>Price:</strong> $76,780.01 <br>
+                                                            <strong>Date:</strong> 2024-05-12 18:36
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr class="main-row" data-bs-toggle="collapse" data-bs-target="#details3">
+                                                        <td>04.01.2025<br> <span class="text-success">12:27</span></td>
+                                                        <td class="pt-4"><img src="image/inner_artwork.svg" width="25"></td>
+                                                        <td>0.0064382 <br>STBUX<br> <span class="text-bright">$0.7221</span></td>
+                                                        <td class="d-flex justify-content-between pt-4">+0.49% <i class="bi bi-chevron-down"></i></td>
+                                                    </tr>
+                                                    <tr class="collapse hidden-row border-0" id="details3">
+                                                       
+                                                        <td colspan="3">
+                                                            <strong>Wallet:</strong> 3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r <br>
+                                                            <strong>Price:</strong> $76,780.01 <br>
+                                                            <strong>Date:</strong> 2024-05-12 18:36
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                   
+                                                    <tr class="main-row" data-bs-toggle="collapse" data-bs-target="#details4">
+                                                        <td>04.01.2025<br> <span class="text-success">12:27</span></td>
+                                                        <td class="pt-4"><img src="image/inner_artwork.svg" width="25"></td>
+                                                        <td>0.0064382 <br>STBUX<br> <span class="text-bright">$0.7221</span></td>
+                                                        <td class="d-flex justify-content-between pt-4">+0.49% <i class="bi bi-chevron-down"></i></td>
+                                                    </tr>
+                                                    <tr class="collapse hidden-row border-0" id="details4">
+                                                       
+                                                        <td colspan="3">
+                                                            <strong>Wallet:</strong> 3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r <br>
+                                                            <strong>Price:</strong> $76,780.01 <br>
+                                                            <strong>Date:</strong> 2024-05-12 18:36
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                </div>   
+                            </div>       
+                        </div>
+
+                    </div>
+                    <div class="container p-2">
+                        <div class="d-flex justify-content-center w-100 mt-3">
+                            <div class="footer position-relative w-100">
+                                <div class="chat-icon d-flex align-items-center justify-content-center" id="openChat"><img src="image/icons/chat.svg"></div>
+                                <div class="text d-flex justify-content-center align-items-center h-100">
+                                    <p class="text-white">©2025 StarbucksToken. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#openInfoBlock").click(function () {
+                    $("#infoBlock").addClass("active");
+                    $("#overlay").fadeIn();
+                });
+    
+                function closeInfoBlock() {
+                    $("#infoBlock").removeClass("active");
+                    setTimeout(() => {
+                        $("#overlay").fadeOut();
+                    }, 500);
+                }
+    
+                $("#closeInfoBlock, #overlay").click(closeInfoBlock);
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('.toggle-btn').click(function () {
+                    $(this).closest('tr').next('.hidden-row').collapse('toggle');
+                });
+            });
+        </script>
+</body>
+</html>

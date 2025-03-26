@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preload" href="fonts/SoDo/SoDoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="cabinet_bg">
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="d-flex align-items-center">
+                <img src="image/avatar.svg" width="50" class="mr-3">
+                <span>Kornev Sergey</span>
+            </div>
+            <span class="close-chat" id="closeChat">×</span>
+        </div>
+    
+        <div class="chat-body">
+          
+            <div class="user-message-container">
+                <div class="message user-message">Hello, how are you doing?</div>
+                <span class="message-time">08:15 AM</span>
+            </div>
+    
+   
+            <div class="admin-message-container">
+                <div class="d-flex align-items-center">
+                    <img src="image/admin.svg" class="mr-2">
+                    <p class="admin-name">Admin</p>
+                </div>
+                <div class="message admin-message">I'm doing well, thank you! How can I help you today?</div>
+                <span class="message-time">08:16 AM</span>
+            </div>
+    
+        
+            <div class="user-message-container">
+                <div class="message user-message">I have a question about the return policy for a product I purchased.</div>
+                <span class="message-time">Just Now</span>
+            </div>
+        </div>
+    
+        <div class="chat-footer">
+            <button class="emoji-btn"><i class="bi bi-emoji-smile"></i></button>
+            <input type="text" placeholder="Reply ...">
+            <button class="attachment-btn">
+                <img src="image/icons/image.svg">
+            </button>
+            <button class="send-btn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+        <main>
+            
+                <div class="mobile-container">
+                    <nav class="navbar navbar-dark">
+                        <a href="#" class="btn btn-primary menu-button" id="buySTBUX">Logout</a>
+                        <div class="mobile-logo text-primary">
+                            <img class="logo" src="image/logo.svg">
+                        </div>
+                        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#mobileMenu" id="openMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+ 
+                    <div class="menu-wrapper d-flex justify-content-center collapse"  id="mobileMenu">
+                        <button class="close-btn" id="closeMenu"><i class="bi bi-x"></i></button>
+                        <div class="container p-0">
+                            <div class="menu-container justify-content-start pl-0">
+
+                            <div class="d-flex align-items-center justify-content-start w-100 mobile_adaptive">
+                                <div class="menu-logo text-primary">
+                                    <img class="logo" src="image/logo.svg">
+                                </div>
+                                <a href="dashboard.html" class="menu-link ">Dashboard</a>
+                                <a href="buy-stbux.html" class="menu-link ">Buy STBUX</a>
+                                <a href="deposit.html" class="menu-link ">Deposit</a>
+                                <a href="withdrawal.html" class="menu-link ">Withdrawal</a>
+                                <a href="taransactions.html" class="menu-link active">Transactions</a>
+                                <a href="settings.html" class="menu-link ">Settings</a>
+                                
+                            </div>
+                            <a href="#" class="btn btn-primary menu-button" id="buySTBUX-2">Logout</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container top-element px-25 p-0">
+                        <div class="green-table p-2 mt-0">
+                            <div class="d-flex justify-content-between text-green align-items-center px-2 py-2" style="font-size: 14px;">
+                                Transactions
+                            </div>
+                            <div class="green-table-scroll p-2 mt-0">
+                                <table class="table table-borderless table-hover text-green " style="font-size: 14px;">
+
+                                    <thead>
+                                    <tr class="text-green" >
+                                        <th scope="col" style="width: 150px;" class="no-mobile">Date</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col" class="text-right">Amount/Status</th>
+                                        
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Canceled</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Canceled</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Canceled</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Pending</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Withdrawal</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.01.2025 <span class="text-bright">12:27</span></td>
+                                        <td class="flex-nowrap"><img src="image/icons/arrow.svg"  class="px-3"><span class="no-mobile-xs">Deposit</span></td>
+                                        <td class="text-right">0.0182028 BTC <span>Completed</span></td>
+                                    </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="container p-0">
+                        <div class="d-flex justify-content-center mt-3">
+                            <div class="footer w-100 position-relative">
+                                <div class="chat-icon d-flex align-items-center justify-content-center" id="openChat"><img src="image/icons/chat.svg"></div>
+                                <div class="text d-flex justify-content-center align-items-center h-100">
+                                    <p class="text-white">©2025 StarbucksToken. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/main.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preload" href="fonts/SoDo/SoDoSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="cabinet_bg">
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <div class="d-flex align-items-center">
+                <img src="image/avatar.svg" width="50" class="mr-3">
+                <span>Kornev Sergey</span>
+            </div>
+            <span class="close-chat" id="closeChat">×</span>
+        </div>
+    
+        <div class="chat-body">
+          
+            <div class="user-message-container">
+                <div class="message user-message">Hello, how are you doing?</div>
+                <span class="message-time">08:15 AM</span>
+            </div>
+    
+   
+            <div class="admin-message-container">
+                <div class="d-flex align-items-center">
+                    <img src="image/admin.svg" class="mr-2">
+                    <p class="admin-name">Admin</p>
+                </div>
+                <div class="message admin-message">I'm doing well, thank you! How can I help you today?</div>
+                <span class="message-time">08:16 AM</span>
+            </div>
+    
+        
+            <div class="user-message-container">
+                <div class="message user-message">I have a question about the return policy for a product I purchased.</div>
+                <span class="message-time">Just Now</span>
+            </div>
+        </div>
+    
+        <div class="chat-footer">
+            <button class="emoji-btn"><i class="bi bi-emoji-smile"></i></button>
+            <input type="text" placeholder="Reply ...">
+            <button class="attachment-btn">
+                <img src="image/icons/image.svg">
+            </button>
+            <button class="send-btn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+        <main>
+            
+                <div class="mobile-container">
+                    <nav class="navbar navbar-dark">
+                        <a href="#" class="btn btn-primary menu-button" id="buySTBUX">Logout</a>
+                        <div class="mobile-logo text-primary">
+                            <img class="logo" src="image/logo.svg">
+                        </div>
+                        <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#mobileMenu" id="openMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+ 
+                    <div class="menu-wrapper d-flex justify-content-center collapse"  id="mobileMenu">
+                        <button class="close-btn" id="closeMenu"><i class="bi bi-x"></i></button>
+                        <div class="container p-0">
+                            <div class="menu-container justify-content-start pl-0">
+
+                            <div class="d-flex align-items-center justify-content-start w-100 mobile_adaptive">
+                                <div class="menu-logo text-primary">
+                                    <img class="logo" src="image/logo.svg">
+                                </div>
+                                <a href="dashboard.html" class="menu-link ">Dashboard</a>
+                                <a href="buy-stbux.html" class="menu-link ">Buy STBUX</a>
+                                <a href="deposit.html" class="menu-link ">Deposit</a>
+                                <a href="withdrawal.html" class="menu-link active">Withdrawal</a>
+                                <a href="taransactions.html" class="menu-link ">Transactions</a>
+                                <a href="settings.html" class="menu-link ">Settings</a>
+                                
+                            </div>
+                            <a href="#" class="btn btn-primary menu-button" id="buySTBUX-2">Logout</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container top-element px-25">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-12 col-md-12 col-sm-12 card-green d-flex justify-content-center" style="max-width: 100%; height: unset;">
+
+                                <form>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Method</label>
+                                            <div class="custom-dropdown" id="methodDropdown">
+                                                Transfer to bank card
+                                                <i class="bi bi-chevron-down"></i>
+                                                <ul class="custom-dropdown-menu p-0">
+                                                    <li class="dropdown-item active">Transfer to bank card </li>
+                                                    <li class="dropdown-item">USDT</li>
+                                                    <li class="dropdown-item">USD</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">Wallet</label>
+                                            <input type="text" class="form-control pl-5" placeholder="">
+                                            <i class="bi bi-copy position-absolute"></i>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">Amount</label>
+                                            <div class="d-flex">
+                                                <input type="text" class="form-control btc-input" placeholder="0">
+                                                <div class="dropdown ">
+                                                    <button class="btn btn-success dropdown-toggle btc-button m-0" type="button" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        BTC <i class="bi bi-chevron-down"></i>
+                                                    </button>
+                                                    <ul class="dropdown-menu btc-dropdown-menu" aria-labelledby="currencyDropdown">
+                                                        <li><a class="dropdown-item active" href="#">BTC</a></li>
+                                                        <li><a class="dropdown-item" href="#">USDT</a></li>
+                                                        <li><a class="dropdown-item" href="#">USD</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">&nbsp;</label>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-success mt-0 w-100">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </form>
+                                
+                            </div>           
+                        </div>
+
+                    </div>
+                    <div class="container p-2">
+                    <div class="d-flex justify-content-center w-100 mt-5">
+                        <div class="footer position-absolute" style="bottom: 10px;">
+                            <div class="chat-icon d-flex align-items-center justify-content-center" id="openChat"><img src="image/icons/chat.svg"></div>
+                            <div class="text d-flex justify-content-center align-items-center h-100">
+                                <p class="text-white">©2025 StarbucksToken. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="js/main.js"></script>
+    
+</body>
+</html>
