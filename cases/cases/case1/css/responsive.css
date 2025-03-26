@@ -1,0 +1,56 @@
+@media (max-width: 1400px) {
+    .swiper-slide img {
+        width: auto;
+        height: 100% !;
+    }
+}
+@media (max-width: 768px) {
+    .footer-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .apartments .container{
+        max-width:unset !important;
+    }
+    section.apartments::after {
+        width: 100%;
+    }
+    .fanbox {
+        position: relative;
+        width: 100%;
+    }
+    section.plan {
+        background-size: 350vh;
+    }
+    section.beach-club,
+    section.project{
+        background-position: unset;
+    }
+    section.shopping{
+        background-position: right;
+    }
+    .mobile-adaptive{
+        flex-direction: column;
+    }
+    .swiper-slide img {
+        width: 100%;
+    }
+    .home-page-icons .mx-5{
+        margin: 0 10px !important;
+    }
+    .home-page-icons img{
+        width: 100%;
+    }
+    .fs-1{
+        font-size: 21px !important;
+    }
+    .user-info.mx-4{
+        margin: 0 0 !important;
+    }
+    .no-desk{
+        display: block;
+    }
+    .lang-list {
+        margin: 0 10px;
+    }
+}

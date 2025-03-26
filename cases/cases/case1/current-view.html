@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <section class="home-page-current"> 
+        <div class="top-bar">
+            <div class="container d-flex justify-content-between">
+                <div class="d-flex mobile-adaptive">
+                    <div class="user-info">
+                    <img src="images/icons/email.svg" width="50" alt="Аватар">
+                    <a class="text-white">zen-garden@gmail.com</a>
+                    </div>
+                    <div class="user-info mx-4">
+                    <img src="images/icons/phone.svg" alt="Роль">
+                    <a class="text-white">+52 000 000 0000</a>
+                    </div>
+                </div>
+                <div class="d-flex mobile-adaptive">
+                    <div class="user-info ">
+                    <img src="images/icons/account.svg" alt="Баланс">
+                    <a class="text-white">Войти</a>
+                    </div>
+                    <div class="user-info mx-4">
+                        <img src="images/icons/language.svg" alt="Настройки">
+                            <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                        <div class="language-switcher"></div>
+                            <ul id="lang-list" class="lang-list">
+                                <li><a class="active" href="#">RU</a></li>
+                                <li><a href="#">FR </a></li>
+                                <li><a href="#">GE</a></li>
+                                <li><a href="#">EN</a></li>
+                                <li><a href="#">ES</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/gen_logo.svg">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+    
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Квартиры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="layout.html">Планировки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="current-view.html">Текущая ситуация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Галерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="center-block-layout">
+            <div class="title">Zen Gardens</div>
+            <ul class="d-flex text-white fs-1 fw-light">
+                <li class="mx-4">Текущая ситуация</li>
+            </ul>
+        </div>
+    </section>
+    <section class="plan-pdf">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center pb-4">
+                
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 my-4 px-5 d-flex flex-column align-items-center justify-content-center position-relative">
+                        <p class="text-white w-100 text-left"><img src="images/icons/calendar.svg" class="mx-2" width="20">08 Сентября 2024</p>
+                        <button id="open-video-btn"><img src="images/icons/play-video.svg"></button>
+                        <img src="images/video/vid1.svg" width="100%">
+                        <p class="text-white">doc_2024-09-08_19-26-33</p>
+                        <div id="video-modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn">&times;</span>
+                                <iframe id="video-frame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 my-4 px-5 d-flex flex-column align-items-center justify-content-center position-relative">\
+                        <p> </p>
+                        <button id="open-video-btn-2"><img src="images/icons/play-video.svg"></button>
+                        <img src="images/video/vid1.svg" width="100%">
+                        <p class="text-white">doc_2024-09-08_19-27-11</p>
+                        <div id="video-modal-2" class="modal">
+                            <button id="open-video-btn-2">Смотреть видео</button>
+                            <div class="modal-content">
+                                <span class="close-btn">&times;</span>
+                                <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="photo-current"></section>
+    <section class="apartments">
+        <div class="container">
+            <div class="row">
+        
+                <div class="fanbox p-0">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/pictures/swiper-1.svg" alt="Фото 1"></div>
+                            <div class="swiper-slide"><img src="images/pictures/swiper-2.svg" alt="Фото 2"></div>
+                            <div class="swiper-slide"><img src="images/pictures/swiper-3.svg" alt="Фото 3"></div>
+                            <div class="swiper-slide"><img src="images/pictures/swiper-4.svg" alt="Фото 3"></div>
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-next custom-next"></div>
+                            <div class="swiper-button-prev custom-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 my-4"></div>
+            
+                <div class="col-md-6 col-sm-12 my-4">
+                    <h1 class="text-white px-3">Комфортабельные апартаменты</h1>
+                    <h2 class="text-white p-3">Квартиры на берегу моря в <br> центре Канкуна от $100.000</h2>
+                    <ul class="text-white">
+                        <li>5 минут пешком до моря</li>
+                        <li>2 мин пешком до Торгового центра Puerto Cancun</li>
+                        <li>Лучшее местоположение в отельной зоне Канкуна</li>
+                        <li>Частный доступ к Beach Club</li>
+                        <li>Охрана територии 24 часа </li>
+                        <li>Возможность администрировать вашу квартиру (сдача в оренду) во время вашего отсутсвия</li>
+                        <li>Инвистиции которые ростут с каждым годом</li>
+                    </ul>
+                    <button class="btn btn-about text-white m-3 px-5">Подробнее</button>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container position-relative">
+            <button id="scroll-up" class="btn btn-up"><i class="bi bi-chevron-up"></i></button>
+            <div class="footer-logo">
+                <img src="images/gen_logo.svg" alt="Zen Gardens">
+            </div>
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="#">Квартиры</a></li>
+                    <li><a href="layout.html">Планировки</a></li>
+                    <li><a href="current-view.html">Текущая ситуация</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer-contacts">
+                <p><img src="images/icons/email.svg" alt="Email"> zen-garden@gmail.com</p>
+                <p><img src="images/icons/phone.svg" alt="Phone"> +52 000 000 0000</p>
+                <p><img src="images/icons/location.svg" alt="Location">  
+                    Av. Bonampak, Kukulcan Blvd, Zona Hotelera, 77500  
+                    Cancún, Q.R., Mexico
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Zen Gardens. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/video.js"></script>
+    
+</body>
+</html>

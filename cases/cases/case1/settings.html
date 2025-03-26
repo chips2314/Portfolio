@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <div class="adaptive">
+        <button class="navbar-toggler border-0 p-3" id="mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-mobile-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center p-2 mt-3">
+                        <img src="images/cabinet/logo_1.svg" width="70px" height="auto" alt="Logo">
+                        <img src="images/cabinet/logo_2.svg" alt="Logo" class="img-2">
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-3 hide-menu">
+                
+                <li class="nav-item menu">
+                    <a href="dashboard_invest-full.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/dashboard.svg" class="mx-2">
+                        <span class="link-text">Панель управления</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="deposit.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/deposit.svg" class="mx-2">
+                        <span class="link-text">Депозит</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="buy-token.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/wallet.svg" class="mx-2">
+                        <span class="link-text">Купить токены</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="invest-project.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/coin.svg" class="mx-2">
+                        <span class="link-text">Инвест проект</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transfer.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/transfer.svg" class="mx-2">
+                        <span class="link-text">Перевод</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transactions.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/transactions.svg" class="mx-2">
+                        <span class="link-text">Транзакции</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="settings.html" class="nav-link active d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/settings_active.svg" class="mx-2">
+                        <span class="link-text">Настройки</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="flex-nowrap text-white mb-0 mr-2">Закрыть меню</p>
+               <img src="images/cabinet/icons/arrow_close.svg">
+            </button>
+        </nav>
+        
+        <main id="content" class="flex-grow-1 pt-0 px-3 position-relative" style="height: unset !important;">
+                <div class="d-flex align-items-center justify-content-between px-4 py-3">
+                    
+                    <div class="dashboard-title">
+                        <h5 class="m-0 text-white">Настройки</h5>
+                    </div>
+                    
+                    <div class="d-flex mobile-adaptive">
+                        <div class="user-info  d-sm-none">
+                        <img src="images/icons/account.svg" alt="Баланс">
+                        <a class="text-white">Войти</a>
+                        </div>
+                        <div class="user-info mx-4">
+                            <img src="images/icons/language.svg" alt="Настройки">
+                                <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                         <div class="language-switcher"></div>
+                        <ul id="lang-list" class="lang-list">
+                            <li><a class="active" href="#">RU</a></li>
+                            <li><a href="#">FR </a></li>
+                            <li><a href="#">GE</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">ES</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch_pad">
+                    <div class="d-flex text-center justify-content-center w-100">
+                        <p class="text-white">Чтобы верифицировать ваш аккаунт, заполните все поля с красной звездочкой</p>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center" style="max-width: 100%; height: unset;">
+                                <form class="w-50">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Имя</label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control deposit-input" placeholder="Сергей">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Фамилия</label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control deposit-input" placeholder="Никитин">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Телефон<span class="text-red">*</span></label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control deposit-input" placeholder="+7(423)249-77-77">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Электронная почта</label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control deposit-input" placeholder="sergey-nikitin1985@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Страна<span class="text-red">*</span></label>
+                                            <div class="custom-dropdown justify-content-between" id="methodDropdown">
+                                                Россия
+                                                <i class="bi bi-chevron-down"></i>
+                                                <ul class="custom-dropdown-menu p-0">
+                                                    <li class="dropdown-item active">Россия</li>
+                                                    <li class="dropdown-item">Беларусь</li>
+                                                    <li class="dropdown-item">Узбекистан</li>
+                                                    <li class="dropdown-item">Испания</li>
+                                                    <li class="dropdown-item">Мексика</li>
+                                                    <li class="dropdown-item">Германия</li>
+                                                    <li class="dropdown-item">Франция</li>
+                                                    <li class="dropdown-item">Италия</li>
+                                                    <li class="dropdown-item">Канада</li>
+                                                    <li class="dropdown-item">США</li>
+                                                    <li class="dropdown-item">Китай</li>
+                                                    <li class="dropdown-item">Япония</li>
+                                                    <li class="dropdown-item">Южная Корея</li>
+                                                    <li class="dropdown-item">Бразилия</li>
+                                                    <li class="dropdown-item">Аргентина</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Адрес<span class="text-red">*</span></label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control deposit-input" placeholder="Профсоюзная ул., 16б, 420111">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Копия документов<span class="text-red">*</span></label>
+                                            <div class="custom-dropdown justify-content-between" id="methodDropdown">
+                                                Паспорт
+                                                <i class="bi bi-chevron-down"></i>
+                                                <ul class="custom-dropdown-menu p-0">
+                                                    <li class="dropdown-item active">Паспорт</li>
+                                                    <li class="dropdown-item">ID</li>
+                                                    <li class="dropdown-item">Налоговое ID</li>
+                                                    <li class="dropdown-item">POR</li>
+                                                    <li class="dropdown-item">Водительские права</li>
+                                                    <li class="dropdown-item">Квитанция</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Загрузка<span class="text-red">*</span></label>
+                                            <div class="d-flex w-100">
+                                                <input type="file" class="form-control deposit-input" placeholder="scan-id.png">
+                                                <button class="btn bg-dark text-white btn-usdt m-0" type="button">
+                                                    Загрузить
+                                                </button>
+                                            </div>
+                                            
+                                            <small>jpg. png. pdf. tiff. webp.</small>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label text-white">Пароль<span class="text-red">*</span></label>
+                                            <div class="d-flex w-100">
+                                                <input type="text" class="form-control address-input" placeholder="*********">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 px-1">
+                                            <label class="form-label">&nbsp;</label>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-submit w-100 mt-0">Сохранить</button>
+                                            </div>
+                                        </div>
+                                    </div>                                                                     
+                                </form>
+                                <div class="d-flex justify-content-center w-100 prev">
+                                    <img src="images/cabinet/photo.svg" width="25%">
+                                </div>
+                                
+                            </div>           
+                        </div>
+                    </div>
+                </div>
+            <div class="footer w-100 text-center py-3">
+                <p class="mb-0">© 2025 Zen Garden. All rights reserved.</p>
+            </div>
+        </main>
+
+    </div>
+
+                
+                
+            
+ 
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cabinet.js"></script>
+</body>
+</html>

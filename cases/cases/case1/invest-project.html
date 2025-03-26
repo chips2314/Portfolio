@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инвест-проект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <div class="adaptive">
+        <button class="navbar-toggler border-0 p-3" id="mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-mobile-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center p-2 mt-3">
+                        <img src="images/cabinet/logo_1.svg" width="70px" height="auto" alt="Logo">
+                        <img src="images/cabinet/logo_2.svg" alt="Logo" class="img-2">
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-3 hide-menu">
+                
+                <li class="nav-item menu">
+                    <a href="dashboard_invest-full.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/dashboard.svg" class="mx-2">
+                        <span class="link-text">Панель управления</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="deposit.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/deposit.svg" class="mx-2">
+                        <span class="link-text">Депозит</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="buy-token.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/wallet.svg" class="mx-2">
+                        <span class="link-text">Купить токены</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="invest-project.html" class="nav-link d-flex align-items-center active p-2">
+                        <img src="images/cabinet/icons/coin_active.svg" class="mx-2">
+                        <span class="link-text">Инвест проект</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transfer.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/transfer.svg" class="mx-2">
+                        <span class="link-text">Перевод</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transactions.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/transactions.svg" class="mx-2">
+                        <span class="link-text">Транзакции</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="settings.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/settings.svg" class="mx-2">
+                        <span class="link-text">Настройки</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="flex-nowrap text-white mb-0 mr-2">Закрыть меню</p>
+               <img src="images/cabinet/icons/arrow_close.svg">
+            </button>
+        </nav>
+        
+        <main id="content" class="flex-grow-1 pt-0 px-3 position-relative" style="height: unset !important;">
+                <div class="d-flex align-items-center justify-content-between px-4 py-3">
+                    
+                    <div class="dashboard-title">
+                        <h5 class="m-0 text-white">Инвест проект</h5>
+                    </div>
+                    
+                    <div class="d-flex mobile-adaptive">
+                        <div class="user-info d-sm-none">
+                            <img src="images/icons/account.svg" alt="Баланс">
+                            <a class="text-white">Войти</a>
+                        </div>
+                        <div class="user-info mx-4">
+                            <img src="images/icons/language.svg" alt="Настройки">
+                                <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                         <div class="language-switcher"></div>
+                        <ul id="lang-list" class="lang-list">
+                            <li><a class="active" href="#">RU</a></li>
+                            <li><a href="#">FR </a></li>
+                            <li><a href="#">GE</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">ES</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch_pad">
+                    <div class="d-flex flex-column text-center justify-content-center w-100">
+                        <p class="text-white">Чтобы купить инвест проект от Zen Gardens вам необходимо:</p>
+                        <div class="d-flex align-items-center text-white info px-3 py-2 my-3"><img src="images/cabinet/icons/info.svg" width="35" class="mr-2">1. Выберите инвест проект</div>
+                    </div>
+                    <div class="container dashboard mt-4">
+                        <div class="row">
+                            <div class="col-md-4 px-1">
+                                <div class="card text-center text-white bg-blue my-2">
+                                    <div class="card-title d-flex justify-content-center">
+                                        <img src="images/cabinet/house.svg" class="my-2">
+                                    </div>
+                                    <div class="card-header bg-success fs-4">Full</div>
+                                    <div class="card-body">
+                                        <p class="mb-0">Тип инвестиций</p>
+                                        <span>Покупка целой квартиры</span>
+                                    </div>
+                                        <div class="card-header bg-secondary">
+                                            <p class="mb-0">Покупка сразу или через токены</p>
+                                            <span>USDT / ZGARDN</span>
+                                        </div>
+                                        <div class="card-header bg-secondary-light">
+
+                                        <p class="mb-0">Возможные привилегии</p>
+                                        <spanp>✔ Бонусы</span>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-center">
+                                        <div class="option">
+                                            <input type="checkbox" id="option1" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                            <label for="option1">Выбрать</label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 px-0">
+                                <div class="card text-center text-white bg-blue my-2">
+                                    <div class="card-title d-flex justify-content-center">
+                                        <img src="images/cabinet/house.svg" class="my-2">
+                                    </div>
+                                    <div class="card-header bg-primary fs-4">Commercial</div>
+                                    <div class="card-body">
+                                        <p class="mb-0">Тип инвестиций</p>
+                                        <span>% от коммерческой недвижимости</span>
+                                    </div>
+                                    <div class="card-header bg-secondary">
+                                        <p class="mb-0">Покупка через токены</p>
+                                        <span>ZGARDN</span>
+                                    </div>
+                                    <div class="card-header bg-secondary-light">
+                                        <p class="mb-0">Возможные привилегии</p>
+                                        <span>✔ Бонусы</span>
+                                    </div>
+                                    <div class="card-body d-flex justify-content-center">
+                                        <div class="option">
+                                            <input type="checkbox" id="option2" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                            <label for="option2">Выбрать</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="col-md-4 px-1">
+                                <div class="card text-center text-white bg-blue my-2">
+                                    <div class="card-title d-flex justify-content-center">
+                                        <img src="images/cabinet/house.svg" class="my-2">
+                                    </div>
+                                    <div class="card-header bg-danger fs-4">Share</div>
+                                        <div class="card-body">
+                                            <p class="mb-0">Тип инвестиций</p>
+                                            <span>% доля от частной недвижимости</span>
+                                        </div>
+                                        <div class="card-header bg-secondary">
+                                            <p class="mb-0">Покупка через токены</p>
+                                            <span>ZGARDN</span>
+                                        </div>
+                                        <div class="card-header bg-secondary-light">
+                                            <p class="mb-0">Возможные привилегии</p>
+                                            <span>✔ Бонусы</span>
+                                        </div>
+                                    
+                                    <div class="card-body d-flex justify-content-center">
+                                        <div class="option">
+                                            <input type="checkbox" id="option3" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                            <label for="option3">Выбрать</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column text-center justify-content-center w-100">
+                        <div class="d-flex align-items-center text-white info px-3 py-2 my-3"><img src="images/cabinet/icons/info.svg" width="35" class="mr-2">2. Выберите планировку объекта</div>
+                    </div>
+                   
+                        <div class="d-flex flex-column align-items-center justify-content-center paddings pb-4">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-12 my-4 px-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <img src="images/pictures/plan-1.svg" width="80%">
+                                    <p class="text-white">plan_ZK_mexica_002_02</p>
+                                    <button id="download-btn-2" class="btn btn-about text-white d-flex j w-100 m-3"><img src="images/icons/pdf.svg" class="mx-2">Скачать PDF</button>
+                                    <button id="open-pdf-btn" class="btn btn-zoom"><img src="images/icons/zoom.svg"></button>
+                                    <div class="option">
+                                        <input type="checkbox" id="option4" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                        <label for="option4">Выбрать</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 my-4 px-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <img src="images/pictures/plan-1.svg" width="80%">
+                                    <p class="text-white">plan_ZK_mexica_002_02b</p>
+                                    <button id="download-btn-3" class="btn btn-about text-white w-100 m-3"><img src="images/icons/pdf.svg" class="mx-2">Скачать PDF</button>
+                                    <button id="open-pdf-btn-2" class="btn btn-zoom"><img src="images/icons/zoom.svg"></button>
+                                    <div class="option">
+                                        <input type="checkbox" id="option5" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                        <label for="option5">Выбрать</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 my-4 px-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <img src="images/pictures/plan-2.svg" width="80%">
+                                    <p class="text-white">plan_ZK_mexica_002_04</p>
+                                    <button id="download-btn-4" class="btn btn-about text-white w-100 m-3"><img src="images/icons/pdf.svg" class="mx-2">Скачать PDF</button>
+                                    <button id="open-pdf-btn-3" class="btn btn-zoom"><img src="images/icons/zoom.svg"></button>
+                                    <div class="option">
+                                        <input type="checkbox" id="option6" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                        <label for="option6">Выбрать</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 my-4 px-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <img src="images/pictures/plan-3.svg" width="80%">
+                                    <p class="text-white">plan_ZK_mexica_002_05</p>
+                                    <button id="download-btn-5" class="btn btn-about text-white w-100 m-3"><img src="images/icons/pdf.svg" class="mx-2">Скачать PDF</button>
+                                    <button id="open-pdf-btn-4" class="btn btn-zoom"><img src="images/icons/zoom.svg"></button>
+                                    <div class="option">
+                                        <input type="checkbox" id="option7" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                        <label for="option7">Выбрать</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 my-4 px-1 d-flex flex-column align-items-center justify-content-center position-relative">
+                                    <img src="images/pictures/plan-4.svg" width="80%">
+                                    <p class="text-white">plan_ZK_mexica_002_06</p>
+                                    <button id="download-btn" class="btn btn-about text-white w-100 m-3"><img src="images/icons/pdf.svg" class="mx-2">Скачать PDF</button>
+                                    <button id="open-pdf-btn-5" class="btn btn-zoom"><img src="images/icons/zoom.svg"></button>
+                                    <div class="option">
+                                        <input type="checkbox" id="option8" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                        <label for="option8">Выбрать</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column text-center justify-content-center w-100">
+                            <div class="d-flex align-items-center text-white info px-3 py-2 my-3"><img src="images/cabinet/icons/info.svg" width="35" class="mr-2">3. Заполните форму и выберите кнопку «Инвестировать»</div>
+                        </div>
+                        <div class="d-flex flex-column text-center align-items-center w-100 mt-2">
+                            <form class="w-50 p-3">
+                                <div class="row mb-3">
+                                    <div class="col-md-6 px-1">
+                                        <label class="form-label text-white text-left w-100">Площадь / М2</label>
+                                        <div class="custom-dropdown text-left justify-content-between" id="methodDropdown">
+                                            25
+                                            <i class="bi bi-chevron-down"></i>
+                                            <ul class="custom-dropdown-menu p-0">
+                                                <li class="dropdown-item active">25</li>
+                                                <li class="dropdown-item">50</li>
+                                                <li class="dropdown-item">75</li>
+                                                <li class="dropdown-item">100</li>
+                                                <li class="dropdown-item">120</li>
+                                                <li class="dropdown-item">240</li>
+                                                <li class="dropdown-item">280</li>
+                                                <li class="dropdown-item">320</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 px-1">
+                                        <label class="form-label text-white text-left w-100">Этаж</label>
+                                        <div class="custom-dropdown text-left justify-content-between" id="methodDropdown">
+                                            1
+                                            <i class="bi bi-chevron-down"></i>
+                                            <ul class="custom-dropdown-menu p-0">
+                                                <li class="dropdown-item active">1</li>
+                                                <li class="dropdown-item">2</li>
+                                                <li class="dropdown-item">3</li>
+                                                <li class="dropdown-item">4</li>
+                                                <li class="dropdown-item">5</li>
+                                                <li class="dropdown-item">6</li>
+                                            </ul>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="col-md-6 px-1">
+                                        <label class="form-label text-white text-left w-100">Количество комнат</label>
+                                        <div class="custom-dropdown text-left justify-content-between" id="methodDropdown">
+                                           1
+                                            <i class="bi bi-chevron-down"></i>
+                                            <ul class="custom-dropdown-menu p-0">
+                                                <li class="dropdown-item active">1</li>
+                                                <li class="dropdown-item">2</li>
+                                                <li class="dropdown-item">3</li>
+                                                <li class="dropdown-item">4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 px-1">
+                                        <label class="form-label">&nbsp;</label>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-submit w-100 mt-0">Инвестировать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                </div>
+            <div class="footer w-100 text-center py-3 mt-5 position-relative">
+                <p class="mb-0">© 2025 Zen Garden. All rights reserved.</p>
+            </div>
+        </main>
+
+    </div>
+
+                
+                
+            
+ 
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cabinet.js"></script>
+</body>
+</html>
