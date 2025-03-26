@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="d-flex">
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+            <img src="images/menu.png" alt="Menu">
+          </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+          <div class="d-flex justify-content-between mr-auto menu-language">
+            <div class="d-flex justify-content-center align-items-center no-desk">
+                <button class="btn btn-primary mx-3 no-laptop">Deposit</button>     
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Русский</a>
+                        <a class="dropdown-item" href="#">Español</a>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="#" class="nav-link d-flex align-items-center">
+                    <img src="images/logo.png" alt="Logo">
+                    <span class="link-text">Logodesign</span>
+                </a>
+            </div>
+        </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-4 hide-menu">
+                <div class="d-flex flex-column w-100 justify-content-center align-items-center" id="no-desk">
+                    <img src="images/account.png" alt="Client Icon" class="client-icon mt-2">
+                    <p class="mb-0 font-weight-bold text-white">John Doe</p>
+                    <p class="mb-0 text-danger mb-3"><img src="images/shield.png" class="mr-2">Account not verified</p>
+                     
+                </div>
+                <li class="nav-item menu">
+                    <a href="index.html" class="nav-link d-flex align-items-center">
+                        <img src="images/dashboard_grey.png" class="mx-3">
+                        <span class="link-text">Dashboard</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="deposit.html" class="nav-link d-flex align-items-center">
+                        <img src="images/deposit.png" class="mx-3">
+                        <span class="link-text">Deposit</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="withdrawal.html" class="nav-link d-flex align-items-center">
+                        <img src="images/withdrawal.png" class="mx-3">
+                        <span class="link-text">Withdrawal</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="transactions.html" class="nav-link d-flex align-items-center">
+                        <img src="images/transactions.png" class="mx-3">
+                        <span class="link-text">Transactions</span>
+                    </a>
+                </li>
+                <li class="nav-item menu active">
+                    <a href="settings.html" class="nav-link d-flex align-items-center">
+                        <img src="images/settings-svgrepo_white.png" class="mx-3">
+                        <span class="link-text">Settings</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="#" class="nav-link d-flex align-items-center">
+                        <img src="images/logout-arrows.png" class="mx-3">
+                        <span class="link-text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="minimized mb-0 mr-2">Minimized menu</p>
+               
+                    <img src="images/hide-sidebar-horiz.png">
+              
+            </button>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="flex-grow-1 pt-0 px-3">
+            <div class="row">
+                <div class="header d-flex align-items-center justify-content-between px-4 py-3 mb-4">
+                    <div class="dashboard-title">
+                        <h1 class="m-0">Settings</h1>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                      
+                        <img src="images/account.png" alt="Client Icon" class="client-icon mr-3">
+                        <div class="client-info text-left mr-3">
+                            <p class="mb-0 font-weight-bold text-white">John Doe</p>
+                            <p class="mb-0 text-danger"><img src="images/shield.png" class="mr-2">Account not verified</p>
+                        </div>
+                        <button class="btn btn-primary mr-3">Deposit</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">Русский</a>
+                                <a class="dropdown-item" href="#">Español</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+              
+                <div class="col-12 pl-5 d-flex">
+
+                    <div class="col-6">
+                        
+                        <div class="container content-block height-correct dark-grey p-4">
+                            <form>
+                              <div class="row">
+                                <!-- First name -->
+                                <div class="col-md-6 mb-3">
+                                  <label for="firstName" class="form-label">First name<span style="color: #FF173D;">*</span></label>
+                                  <input type="text" class="form-control custom-input" id="firstName" placeholder="Joe" required>
+                                </div>
+                                <!-- Last name -->
+                                <div class="col-md-6 mb-3">
+                                  <label for="lastName" class="form-label">Last name<span style="color: #FF173D;">*</span></label>
+                                  <input type="text" class="form-control custom-input" id="lastName" placeholder="Doe" required>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <!-- Phone -->
+                                <div class="col-md-6 mb-3">
+                                  <label for="phone" class="form-label">Phone<span style="color: #FF173D;">*</span></label>
+                                  <input type="tel" class="form-control custom-input" id="phone" placeholder="+000-000-0000">
+                                </div>
+                                <!-- Email -->
+                                <div class="col-md-6 mb-3">
+                                  <label for="email" class="form-label">Email<span style="color: #FF173D;">*</span></label>
+                                  <input type="email" class="form-control custom-input" id="email" placeholder="sample@mail.com">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <!-- Country -->
+                                <div class="col-md-6 mb-3 d-flex flex-column">
+                                  <label for="country" class="form-label">Country<span style="color: #FF173D;">*</span></label>
+                                  <select id="country" class="form-select custom-input">
+                                    <option selected>Australia</option>
+                                    <option>USA</option>
+                                    <option>Canada</option>
+                                    <option>UK</option>
+                                  </select>
+                                </div>
+                                <!-- Tax status -->
+                                <div class="col-md-6 mb-3 d-flex flex-column">
+                                  <label for="taxStatus" class="form-label">Tax status<span style="color: #FF173D;">*</span></label>
+                                  <select id="taxStatus" class="form-select custom-input">
+                                    <option selected>Non TAX</option>
+                                    <option>TAX</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <!-- Address -->
+                                <div class="col-12 mb-3">
+                                  <label for="address" class="form-label">Address<span style="color: #FF173D;">*</span></label>
+                                  <input type="text" class="form-control custom-input" id="address" placeholder="Nulla St. Mankato Mississippi 96522">
+                                </div>
+                              </div>
+                              <!-- Save button -->
+                              <div class="d-flex justify-content-center w-100 align-items-center">
+                                <button type="submit" class="btn btn-success">Save</button>
+                              </div>
+                            </form>
+                          </div>
+                          
+                        </div>
+                          
+
+                    <div class="col-6 margin-correct-3">
+                       
+                        <div class="container content-block dark-grey p-4 height-correct">
+                            <div class="graph-header mt-1 mb-3">
+                                <h1>Scanned documents</h1>
+                              </div>
+                            <form>
+                              
+                              <div class="row align-items-center mb-0">
+                                <label for="documentType" class="ml-3 w-100 form-label">Permitted documents<span class="text-danger">*</span></label>
+                                <div class="col-md-6">
+                                  
+                                  <div class="">
+                                    <select id="documentType" class=" w-100 form-select custom-input">
+                                        <option selected>National ID</option>
+                                        <option>Passport</option>
+                                        <option>Driver's License</option>
+                                    </select>
+                                    <div class="d-flex justify-content-end w-100 text-success smaller mt-3">
+                                        <p class="text-left w-100 mb-0"> &nbsp;</p>
+                                      </div>
+                                  </div>
+                                </div>
+
+                            
+                                <div class="col-md-6">
+                                <div class="custom-file mt-1">
+                                    <input type="file" class="custom-file-input" id="fileUpload">
+                                    <label class="custom-file-label" for="fileUpload">id_scan.jpg</label>
+                                </div>
+                                <div class="d-flex justify-content-end w-100 text-success smaller mt-3 mb-3">
+                                    <p class="text-left w-100 mb-0">jpg, png, pdf, tiff, webp.</p>
+                                </div>
+                                </div>
+                              </div>
+
+                             
+
+                              <div class="d-flex justify-content-center mt-4 mb-3">
+                                <div class="position-relative">
+                                  <img src="images/scan-document-image.png" alt="Document preview" class="image position-relative">
+                                  <button type="button" class="btn btn-danger btn-sm position-absolute" style="top: 10px; right: 10px;">&times;</button>
+                                </div>
+                              </div>
+
+                              <div class="d-flex justify-content-center w-100 align-items-center mt-5">
+                                <button type="submit" class="btn btn-success">Upload</button>
+                              </div>
+                            </form>
+                          </div>
+                          
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
