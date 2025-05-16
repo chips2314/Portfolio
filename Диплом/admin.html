@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <div class="adaptive">
+        <button class="navbar-toggler border-0 p-3" id="mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-mobile-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center p-2 mt-3">
+                        <img src="images/cabinet/logo_1.svg" width="70px" height="auto" alt="Logo">
+                        <img src="images/cabinet/logo_2.svg" alt="Logo" class="img-2">
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-3 hide-menu">
+                
+                <li class="nav-item menu">
+                    <a href="index.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/dashboard.svg" class="mx-2">
+                        <span class="link-text flex-nowrap">Объекты недвижимости</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="arendators.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/deposit.svg" class="mx-2">
+                        <span class="link-text">Арендаторы</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="dogovri.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/wallet.svg" class="mx-2">
+                        <span class="link-text">Договоры и платежи</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="otchet.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/coin.svg" class="mx-2">
+                        <span class="link-text">Отчеты и аналитика</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="admin.html" class="nav-link d-flex active align-items-center p-2">
+                        <img src="images/cabinet/icons/settings_active.svg" class="mx-2">
+                        <span class="link-text">Администрирование</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="flex-nowrap text-white mb-0 mr-2">Закрыть меню</p>
+               <img src="images/cabinet/icons/arrow_close.svg">
+            </button>
+        </nav>
+        
+        <main id="content" class="flex-grow-1 pt-0 px-3 position-relative" style="height: unset !important;">
+                <div class="d-flex align-items-center justify-content-between px-4 py-2 position-relative">
+                    
+                    <div class="dashboard-title">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+                                <img src="images/cabinet/icons/avatar.svg" width="60px" height="60px" class="rounded-circle" alt="User">
+                            </div>
+                            <div class="adaptive-1200">
+                                <h5 class="mb-1 text-white w-100">Никитин Сергей</h5>
+                                <span class="badge badge-custom">Сотрудник</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="d-flex mobile-adaptive">
+                        <div class="user-info d-sm-none">
+                        <img src="images/icons/account.svg" alt="Баланс">
+                        <a href="login.html" class="text-white">Выйти</a>
+                        </div>
+                        <div class="user-info mx-4">
+                            <img src="images/icons/language.svg" alt="Настройки">
+                                <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                         <div class="language-switcher"></div>
+                        <ul id="lang-list" class="lang-list">
+                            <li><a class="active" href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch_pad">
+                    <div class="row justify-content-between dashboard">
+                        
+                        <div class="col-lg-6 col-md-12 col-sm-12 m-1 p-0">
+                                <div class="w-100 d-flex flex-column p-3 bg-blue">
+                                <div>
+                                    <h5 class="mb-3 text-white">Создание пользователя</h5>
+                                    <hr>
+                                </div>
+                                    <form class="p-4">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Имя<span class="text-red">*</span></label>
+                                                <div class="d-flex w-100">
+                                                    <input type="text" class="form-control deposit-input" placeholder="Сергей">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Фамилия<span class="text-red">*</span></label>
+                                                <div class="d-flex w-100">
+                                                    <input type="text" class="form-control deposit-input" placeholder="Никитин">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Телефон<span class="text-red">*</span></label>
+                                                <div class="d-flex w-100">
+                                                    <input type="text" class="form-control deposit-input" placeholder="+7(423)249-77-77">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Электронная почта</label>
+                                                <div class="d-flex w-100">
+                                                    <input type="text" class="form-control deposit-input" placeholder="sergey-nikitin1985@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Роль<span class="text-red">*</span></label>
+                                                <div class="custom-dropdown justify-content-between" id="methodDropdown">
+                                                    Администратор
+                                                    <i class="bi bi-chevron-down"></i>
+                                                    <ul class="custom-dropdown-menu p-0">
+                                                        <li class="dropdown-item active">Администратор</li>
+                                                        <li class="dropdown-item">Сотрудник</li>
+                                                        <li class="dropdown-item">Арендатор</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Копия паспорта<span class="text-red">*</span></label>
+                                                <div class="d-flex w-100">
+                                                    <input type="file" class="form-control deposit-input" placeholder="scan-id.png">
+                                                    <button class="btn bg-dark text-white btn-usdt m-0" type="button">
+                                                        Загрузить
+                                                    </button>
+                                                </div>
+                                                
+                                                <small>jpg. png. pdf. tiff. webp.</small>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label text-white">Пароль<span class="text-red">*</span></label>
+                                                <div class="d-flex w-100">
+                                                    <input type="text" class="form-control address-input" placeholder="*********">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 px-1">
+                                                <label class="form-label">&nbsp;</label>
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-submit w-100 mt-0">Сохранить</button>
+                                                </div>
+                                            </div>
+                                        </div>                                                                     
+                                    </form>
+
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 bg-turquoise d-flex flex-column justify-content-center p-4 mt-3">
+                                            <div class="d-flex align-items-center">
+                                                <div class="adaptive-1200">
+                                                    <h5 class="mb-1 text-white w-100">Настройка уведомлений и интеграций</h5>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="d-flex flex-column">
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option1" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option1">Email</label>
+                                                        </div>
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option2" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option2">SMS</label>
+                                                        </div>
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option3" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option3">Telegram</label>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                                 <div class="col-lg-9">
+                                                    <div class="d-flex flex-column">
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option4" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option4">Приближение срока оплаты аренды</label>
+                                                        </div>
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option5" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option5">Изменение условий договора</label>
+                                                        </div>
+                                                        <div class="option mt-2">
+                                                            <input type="checkbox" id="option6" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option6">Новые документы в ЛК арендатора</label>
+                                                        </div>
+                                                            <div class="option mt-2">
+                                                            <input type="checkbox" id="option7" class="custom-checkbox" onclick="selectOnlyOne(this)">
+                                                            <label for="option7">Новые документы в ЛК арендатора</label>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                    </div>
+                                </div>
+                            
+                            </div>
+                                
+                        <div class="col-lg-6 col-md-12 col-sm-12 bg-blue m-1 p-3">
+                            <div class="d-flex ">
+                                <div>
+                                    <h5 class="mb-3 text-white">Логирование действий  пользователей</h5>
+                                </div>
+                            </div>
+                            <table id="Table" class="table table-borderless table-hover text-white" style="font-size: 13px;">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Дата и время</th>
+                                    <th scope="col">Пользователь </th>
+                                    <th scope="col">Действие</th>
+                                    <th scope="col">IP</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Петров И. И.</a></td>
+                                    <td>
+                                        Вход  в систему
+                                     </td>
+                                    <td>192.68.45.0</td>
+                                
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Сидоров А. М.</a></td>
+                                    <td>
+                                        Формирование отчета
+                                     </td>
+                                    <td>103.58.45.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">25-05-2025<br>17:38</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">Меньшукова В. Р.</a></td>
+                                    <td>
+                                        Оплата комунальных услуг
+                                     </td>
+                                    <td>192.36.99.0</td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="text-center ц-100">
+                                <button type="submit" class="btn btn-submit w-100 mt-0">Экспортировать</button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+        
+        </main>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cabinet.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <div class="adaptive">
+        <button class="navbar-toggler border-0 p-3" id="mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-mobile-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center p-2 mt-3">
+                        <img src="images/cabinet/logo_1.svg" width="70px" height="auto" alt="Logo">
+                        <img src="images/cabinet/logo_2.svg" alt="Logo" class="img-2">
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-3 hide-menu">
+                
+                <li class="nav-item menu">
+                    <a href="index.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/dashboard.svg" class="mx-2">
+                        <span class="link-text flex-nowrap">Объекты недвижимости</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="arendators.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/deposit.svg" class="mx-2">
+                        <span class="link-text">Арендаторы</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="dogovri.html" class="nav-link active d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/wallet_active.svg" class="mx-2">
+                        <span class="link-text">Договоры и платежи</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="otchet.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/coin.svg" class="mx-2">
+                        <span class="link-text">Отчеты и аналитика</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="admin.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/settings.svg" class="mx-2">
+                        <span class="link-text">Администрирование</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="flex-nowrap text-white mb-0 mr-2">Закрыть меню</p>
+               <img src="images/cabinet/icons/arrow_close.svg">
+            </button>
+        </nav>
+        
+        <main id="content" class="flex-grow-1 pt-0 px-3 position-relative" style="height: unset !important;">
+                <div class="d-flex align-items-center justify-content-between px-4 py-2 position-relative">
+                    
+                    <div class="dashboard-title">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+                                <img src="images/cabinet/icons/avatar.svg" width="60px" height="60px" class="rounded-circle" alt="User">
+                            </div>
+                            <div class="adaptive-1200">
+                                <h5 class="mb-1 text-white w-100">Никитин Сергей</h5>
+                                <span class="badge badge-custom">Сотрудник</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="d-flex mobile-adaptive">
+                        <div class="user-info d-sm-none">
+                        <img src="images/icons/account.svg" alt="Баланс">
+                        <a href="login.html" class="text-white">Выйти</a>
+                        </div>
+                        <div class="user-info mx-4">
+                            <img src="images/icons/language.svg" alt="Настройки">
+                                <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                         <div class="language-switcher"></div>
+                        <ul id="lang-list" class="lang-list">
+                            <li><a class="active" href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch_pad">
+                    <div class="row justify-content-between dashboard">
+                        
+                        <div class="col-lg-6 col-md-12 col-sm-12 m-1 p-0">
+
+                                <div class="w-100 p-3 bg-blue">
+                                    <div class="position-absolute text-right d-md-none" style="right: 20px;">
+                                        <p class="mb-0">ID договора<br>
+                                        <strong>#1</strong></p>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="adaptive-1200">
+                                            <h5 class="mb-1 text-white w-100">Договор аренды №1 </h5>
+                                            <span class="text-red">Завершен</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 p-3 ">
+                                            <p class="m-0">Арендаторы<br><div class="d-flex align-items-center"><img src="images/icons/account.svg" class="mr-1"> <div class="text-white">Артеменко Андрей Степанович</div></div>
+                                                <div class="d-flex align-items-center"><img src="images/icons/phone.svg" class="mr-1"> <div class="text-white">+7-904-476-30-05</div></div>
+                                                <div class="d-flex align-items-center"><img src="images/icons/email.svg" class="mr-1"> <div class="text-white">s.ivanov_2001@mail.ru</div></div>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 p-3">
+                                            <p class="m-0">Объект<br> <div class="text-white">ул. Ленина, д. 10</div>
+                                            <div class="text-white">100м2</div>
+                                            <div class="text-white">120.000 руб/мес</div></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="col-lg-12 col-md-12 col-sm-12 bg-turquoise d-flex flex-column justify-content-center p-4 mt-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="adaptive-1200">
+                                                <h5 class="mb-1 text-white w-100">Детали договора</h5>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                             <p class="m-0"><div class="d-flex align-items-center"><div class="text-white">Дата начала: 01.01.2021</div></div>
+                                                <div class="d-flex align-items-center"><div class="text-white">Дата окончания: 31.12.2023</div></div>
+                                                <div class="d-flex align-items-center"><div class="text-white">Оплата: ежемесячно</div></div>
+                                             </p>
+
+                                        
+                                    
+                                </div>
+                            </div>
+                                
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 bg-blue m-1 p-3">
+                            <div class="d-flex ">
+                                <div>
+                                    <h5 class="my-3 text-white">Платежи</h5>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="mb-3">
+                                <div class="text-blue">15.04.2024</div>
+                                <div class="text-light">Платеж по договору</div>
+                                <div class="text-light">120.000 Р</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="text-blue">15.04.2024</div>
+                                <div class="text-light">Платеж по договору</div>
+                                <div class="text-light">120.000 Р</div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="text-blue">15.04.2024</div>
+                                <div class="text-light">Платеж по договору</div>
+                                <div class="text-light">120.000 Р</div>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn btn-custom btn-block m-1">Сгенерировать счет</button>
+                                <button class="btn btn-custom btn-block m-1">Отправить напоминание</button>
+                            </div>
+                        </div>  
+                         <div class="col-lg-12 col-md-12 col-sm-12 bg-delete my-3 mx-1 p-4">
+                            <div class="d-flex justify-content-center align-items-center">
+                                Расторгнуть договор
+                            </div>
+                            
+                         </div>
+                    </div>
+                </div>
+        
+        </main>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cabinet.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транзакции</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <div class="adaptive">
+        <button class="navbar-toggler border-0 p-3" id="mobile-menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerContent" aria-controls="navbarTogglerContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="nav-mobile-menu">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+        </button>
+        <!-- Sidebar -->
+        <nav id="sidebar" class="sidebar d-flex flex-column align-items-center collapsed no-transition">
+            <div class="d-flex justify-content-between">
+                <div class="logo">
+                    <a href="#" class="nav-link d-flex align-items-center p-2 mt-3">
+                        <img src="images/cabinet/logo_1.svg" width="70px" height="auto" alt="Logo">
+                        <img src="images/cabinet/logo_2.svg" alt="Logo" class="img-2">
+                    </a>
+                </div>
+            </div>
+            <ul id="sidebar-menu" class="nav flex-column mt-3 hide-menu">
+                
+                <li class="nav-item menu">
+                    <a href="index.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/dashboard.svg" class="mx-2">
+                        <span class="link-text flex-nowrap">Объекты недвижимости</a></span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="arendators.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/deposit.svg" class="mx-2">
+                        <span class="link-text">Арендаторы</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="dogovri.html" class="nav-link active d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/wallet_active.svg" class="mx-2">
+                        <span class="link-text">Договоры и платежи</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="otchet.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/coin.svg" class="mx-2">
+                        <span class="link-text">Отчеты и аналитика</span>
+                    </a>
+                </li>
+                <li class="nav-item menu">
+                    <a href="admin.html" class="nav-link d-flex align-items-center p-2">
+                        <img src="images/cabinet/icons/settings.svg" class="mx-2">
+                        <span class="link-text">Администрирование</span>
+                    </a>
+                </li>
+            </ul>
+            <button id="toggle-btn" class="btn menu-btn mt-auto mb-4 d-flex align-items-center">
+                <p class="flex-nowrap text-white mb-0 mr-2">Закрыть меню</p>
+               <img src="images/cabinet/icons/arrow_close.svg">
+            </button>
+        </nav>
+        
+        <main id="content" class="flex-grow-1 pt-0 px-3 position-relative">
+                <div class="d-flex align-items-center justify-content-between px-4 py-2">
+                    
+                    <div class="dashboard-title">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-3">
+                                <img src="images/cabinet/icons/avatar.svg" width="60px" height="60px" class="rounded-circle" alt="User">
+                            </div>
+                            <div class="adaptive-1200">
+                                <h5 class="mb-1 text-white w-100">Никитин Сергей</h5>
+                                <span class="badge badge-custom">Сотрудник</span>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="d-flex mobile-adaptive">
+                        <div class="user-info d-sm-none">
+                        <img src="images/icons/account.svg" alt="Баланс">
+                        <a href="login.html" class="text-white">Выйти</a>
+                        </div>
+                        <div class="user-info mx-4">
+                            <img src="images/icons/language.svg" alt="Настройки">
+                                <a id="lang-btn" class="text-white">RU</a>
+                        </div>
+                         <div class="language-switcher"></div>
+                        <ul id="lang-list" class="lang-list">
+                            <li><a class="active" href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="launch_pad">
+                    <div class="p-2 mt-0 no-mobile no-pad-m">
+                       
+                            <table id="Table" class="table table-borderless table-hover text-white" style="font-size: 13px;">
+                                <thead>
+                                <tr>
+                                    <th scope="col">№</th>
+                                    <th scope="col">Адрес </th>
+                                    <th scope="col">Арендатор</th>
+                                    <th scope="col">Задолженность</th>
+                                    <th scope="col">Срок договора</th>
+                                    <th scope="col" class="text-right">Статус</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">1</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">ул. Ленина. д. 10</a></td>
+                                    <td>
+                                        Перлов А. В
+                                     </td>
+                                    <td>350 000 рублей</td>
+                                    <td class="text-blue">6 месяцев</td>
+                                    <td class="text-right">Активен</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">2</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">ул. Конюшенная. д. 15, лит. А</a></td>
+                                    <td>
+                                        Сергеев А. В
+                                     </td>
+                                    <td>0 рублей</td>
+                                    <td class="text-blue">1 год</td>
+                                    <td class="text-right">Истекает срок</td>
+
+                                </tr>
+                                <tr>
+                                    
+                                    <td><a href="dogovri-info.html">3</a></td>
+                                    <td class="flex-nowrap"><a href="dogovri-info.html">ул. Ленина. д. 10</a></td>
+                                    <td>
+                                        Бегунов А. В
+                                     </td>
+                                    <td>0 рублей</td>
+                                    <td class="text-blue">5 лет</td>
+                                    <td class="text-right">Завершен</td>
+
+                                </tr>
+                                </tbody>
+                            </table>
+                        
+                    </div> 
+                        <!-- Mobile Table -->
+                        <div class="p-2 mt-0 no-desk-pad">
+                           
+                                <table class="table table-hover text-white expandable-table" id="Table">
+                                      <tbody>
+                                        <tr class="expandable-row">
+                                          <td class="text-blue">05/12/2024
+                                            12:23</td>
+                                        <td class="flex-nowrap"><img src="images/cabinet/icons/deposit_arr.svg" width="25" class="pr-2">Депозит</td>
+                                          <td class="text-right">
+                                            0.01232
+                                            <i class="bi bi-chevron-down text-white mx-3"></i>
+                                          </td>
+                                        </tr>
+                                        <tr class="expanded-content">
+                                          <td colspan="3">
+                                            <div class="d-flex flex-column">
+                                                <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>USDT</span></div>
+                                                <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Complete</span></div>
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr class="expandable-row">
+                                            <td class="text-blue">05/12/2024
+                                              12:23</td>
+                                              <td class="flex-nowrap"><img src="images/cabinet/icons/transaction_arr.svg" width="25" class="pr-2">Перевод</td> 
+                                          <td class="text-right">
+                                              0.01232
+                                              <i class="bi bi-chevron-down text-white mx-3"></i>
+                                            </td>
+                                          </tr>
+                                          <tr class="expanded-content">
+                                            <td colspan="3">
+                                                <div class="d-flex flex-column">
+                                                    <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                    <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                    <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>ZGARDN</span></div>
+                                                    <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Processed</span></div>
+                                                </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="expandable-row">
+                                            <td class="text-blue">05/12/2024
+                                              12:23</td>
+                                          <td class="flex-nowrap"><img src="images/cabinet/icons/deposit_arr.svg" width="25" class="pr-2">Депозит</td>
+                                            <td class="text-right">
+                                              0.01232
+                                              <i class="bi bi-chevron-down text-white mx-3"></i>
+                                            </td>
+                                          </tr>
+                                          <tr class="expanded-content">
+                                            <td colspan="3">
+                                              <div class="d-flex flex-column">
+                                                  <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                  <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                  <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>USDT</span></div>
+                                                  <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Complete</span></div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr class="expandable-row">
+                                              <td class="text-blue">05/12/2024
+                                                12:23</td>
+                                                <td class="flex-nowrap"><img src="images/cabinet/icons/transaction_arr.svg" width="25" class="pr-2">Перевод</td> 
+                                            <td class="text-right">
+                                                0.01232
+                                                <i class="bi bi-chevron-down text-white mx-3"></i>
+                                              </td>
+                                            </tr>
+                                            <tr class="expanded-content">
+                                              <td colspan="3">
+                                                  <div class="d-flex flex-column">
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>ZGARDN</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Processed</span></div>
+                                                  </div>
+                                              </td>
+                                            </tr>
+                                            <tr class="expandable-row">
+                                                <td class="text-blue">05/12/2024
+                                                  12:23</td>
+                                              <td class="flex-nowrap"><img src="images/cabinet/icons/deposit_arr.svg" width="25" class="pr-2">Депозит</td>
+                                                <td class="text-right">
+                                                  0.01232
+                                                  <i class="bi bi-chevron-down text-white mx-3"></i>
+                                                </td>
+                                              </tr>
+                                              <tr class="expanded-content">
+                                                <td colspan="3">
+                                                  <div class="d-flex flex-column">
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>USDT</span></div>
+                                                      <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Complete</span></div>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr class="expandable-row">
+                                                  <td class="text-blue">05/12/2024
+                                                    12:23</td>
+                                                    <td class="flex-nowrap"><img src="images/cabinet/icons/transaction_arr.svg" width="25" class="pr-2">Перевод</td> 
+                                                <td class="text-right">
+                                                    0.01232
+                                                    <i class="bi bi-chevron-down text-white mx-3"></i>
+                                                  </td>
+                                                </tr>
+                                                <tr class="expanded-content">
+                                                  <td colspan="3">
+                                                      <div class="d-flex flex-column">
+                                                          <div class="d-flex justify-content-between"><p class="mb-0 text-blue">ID:</p><span>57463</span></div>
+                                                          <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Информация:</p><span class="no-mobile">3kudgkdskzcsffyucysryc7sr4dc5s4cds7ahc82r</span><span class="no-pad">....ahc82r</span></div>
+                                                          <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Валюта:</p><span>ZGARDN</span></div>
+                                                          <div class="d-flex justify-content-between"><p class="mb-0 text-blue">Статус:</p><span id="status">Processed</span></div>
+                                                      </div>
+                                                  </td>
+                                                </tr>
+                                      </tbody>
+                                </table>
+                           
+                    </div>   
+                </div>
+            <div class="footer w-100 text-center py-3">
+                <p class="mb-0">© 2025 Zen Garden. All rights reserved.</p>
+            </div>
+        </main>
+
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cabinet.js"></script>
+</body>
+</html>
