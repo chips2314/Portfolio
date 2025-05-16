@@ -19,6 +19,9 @@ main{
     top: 0;
     left: 0;
 }
+.width-correct{
+  max-width: 49% !important;
+}
  
 #sidebar.expanded {
   width: 250px; 
@@ -254,6 +257,9 @@ a:hover{
 @media (max-width: 992px) {
     .col-md-12{
         max-width: 100%;
+    }
+    .launch_pad .col-lg-4 {
+      max-width: unset !important;
     }
 }
 
@@ -896,7 +902,10 @@ color: #FFFFFF;
   .word-break {
           font-size: 1vw;
       }
-
+  .width-correct {
+    max-width: 100% !important; 
+    margin: 10px;
+  }
   .menu-container .menu-link {
       font-size: 16px;
       white-space: nowrap;
@@ -1099,6 +1108,11 @@ color: #FFFFFF;
   .launch_pad {
     margin: 0px 0px 20px 0px;
 }
+.dashboard-title{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
 }
 
 table {
@@ -1283,9 +1297,13 @@ form small{
   form.w-50 .bi{
     position: relative;
   }
-  .dashboard-title{
-    display: none;
-  }
+.filter{
+  margin-top: 10px;
+}
+.footer{
+  position: relative;
+}
+
   #sidebar-menu li{
     display: flex;
     justify-content: center;
@@ -1303,6 +1321,7 @@ form small{
     width: 100% !important;
     margin-bottom: 30px;
   }
+  
 }
 
 @media (max-width: 1400px){
@@ -1330,9 +1349,7 @@ form small{
   font-size: 18px !important;
   font-weight: lighter !important;
 }
-.width-correct{
-  max-width: 49% !important;
-}
+
 .w-48{
   width: 48%;
 }
