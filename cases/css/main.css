@@ -268,4 +268,13 @@ body {
     .case-card{
         width: 100%;
     }
+    .container-paddings{
+        padding: 0 10px !important;
+    }
+    .case-card img {
+        height: 210px !important;
+    }
+    .card-body h5 {
+        text-align: center;
+}
 }
