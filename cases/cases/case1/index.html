@@ -1,342 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Zen Gardens – Апартаменты в Канкуне у моря</title>
+    <meta name="description" content="Zen Gardens – элитные апартаменты в Канкуне. Квартиры у моря с частным доступом к Beach Club. Узнайте больше о возможностях инвестиций.">
+
+    <meta property="og:title" content="Zen Gardens – Апартаменты в Канкуне у моря">
+    <meta property="og:description" content="Элитные квартиры у моря в Канкуне. Инвестиции в недвижимость, комфортная жизнь, уникальное расположение.">
+    <meta property="og:image" content="images/gen_logo.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Residence">
     <section class="home-page"> 
-        <div class="top-bar">
+        <div class="top-bar" itemscope itemtype="https://schema.org/Organization">
             <div class="container d-flex justify-content-between position-relative">
                 <div class="d-flex mobile-adaptive">
-                    <div class="user-info">
-                    <img src="images/icons/email.svg" width="50" alt="Аватар">
-                    <a class="text-white">zen-garden@gmail.com</a>
+                    <div class="user-info" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                        <img src="images/icons/email.svg" width="30" alt="Иконка Email">
+                        <a class="text-white" href="mailto:zen-garden@gmail.com" itemprop="email">zen-garden@gmail.com</a>
                     </div>
-                    <div class="user-info mx-4">
-                    <img src="images/icons/phone.svg" alt="Роль">
-                    <a class="text-white">+52 000 000 0000</a>
+                    <div class="user-info mx-4" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+                        <img src="images/icons/phone.svg" width="30" alt="Иконка Телефон">
+                        <a class="text-white" href="tel:+520000000000" itemprop="telephone">+52 000 000 0000</a>
                     </div>
                 </div>
                 <div class="d-flex mobile-adaptive">
                     <div class="user-info ">
-                    <img src="images/icons/account.svg" alt="Баланс">
-                    <a class="text-white">Войти</a>
+                        <img src="images/icons/account.svg" width="30" alt="Иконка Личный кабинет">
+                        <a class="text-white" href="#">Войти</a>
                     </div>
                     <div class="user-info mx-4">
-                        <img src="images/icons/language.svg" alt="Настройки">
-                            <a id="lang-btn" class="text-white">RU</a>
-                        </div>
-                        <div class="language-switcher"></div>
-                            <ul id="lang-list" class="lang-list">
-                                <li><a class="active" href="#">RU</a></li>
-                                <li><a href="#">FR </a></li>
-                                <li><a href="#">GE</a></li>
-                                <li><a href="#">EN</a></li>
-                                <li><a href="#">ES</a></li>
-                        </ul>
+                        <img src="images/icons/language.svg" width="30" alt="Иконка Язык">
+                        <a id="lang-btn" class="text-white">RU</a>
                     </div>
+                    <ul id="lang-list" class="lang-list">
+                        <li><a class="active" href="#">RU</a></li>
+                        <li><a href="#">FR</a></li>
+                        <li><a href="#">GE</a></li>
+                        <li><a href="#">EN</a></li>
+                        <li><a href="#">ES</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/gen_logo.svg">
+                <a class="navbar-brand" href="index.html" itemprop="url">
+                    <img src="images/gen_logo.svg" alt="Логотип Zen Gardens" itemprop="logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-    
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">О нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Квартиры</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="layout.html">Планировки</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="current-view.html">Текущая ситуация</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Галерея</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html" itemprop="name">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" itemprop="name">Квартиры</a></li>
+                        <li class="nav-item"><a class="nav-link" href="layout.html" itemprop="name">Планировки</a></li>
+                        <li class="nav-item"><a class="nav-link" href="current-view.html" itemprop="name">Текущая ситуация</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" itemprop="name">Галерея</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" itemprop="name">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="center-block">
-            <div class="title">Zen Gardens</div>
+            <h1 class="title" itemprop="name">Zen Gardens</h1>
             <ul class="d-flex text-white fs-1 fw-light">
-                <li class="mx-4">Живи</li>
-                <li class="mx-4">Работай</li>
-                <li class="mx-4">Отдыхай</li>
+                <li class="mx-4" itemprop="slogan">Живи</li>
+                <li class="mx-4" itemprop="slogan">Работай</li>
+                <li class="mx-4" itemprop="slogan">Отдыхай</li>
             </ul>
-            <button class="btn btn-about text-white px-5">Подробнее о Zen Gardens</button>
+            <a href="#about" class="btn btn-about text-white px-5" itemprop="url">Подробнее о Zen Gardens</a>
             <ul class="d-flex p-0 mt-5 home-page-icons">
-                <li class="mx-5 px-2"><img src="images/icons/shopping-bag.svg"></li>
-                <li class="mx-5 px-2"><img src="images/icons/laptop-mail.svg"></li>
-                <li class="mx-5 px-2"><img src="images/icons/third_icon.svg"></li>
+                <li class="mx-5 px-2"><img src="images/icons/shopping-bag.svg" alt="Иконка Шопинг"></li>
+                <li class="mx-5 px-2"><img src="images/icons/laptop-mail.svg" alt="Иконка Онлайн-заявка"></li>
+                <li class="mx-5 px-2"><img src="images/icons/third_icon.svg" alt="Иконка Услуги"></li>
             </ul>
             <p class="mt-5 text-white">Ознакомиться</p>
             <button id="scroll-down" class="btn btn-down d-flex align-items-center justify-content-center"><i class="bi bi-arrow-down fs-2"></i></button>
         </div>
+    </section>
 
-    </section>
-    <section class="advantages"> 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center justify-content-center my-5">
-                    <img src="images/icons/gray-1.svg">
-                    <p>35 миллионов<br>пассажиров ежегодно</p>
-                </div>
-                <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center justify-content-center my-5">
-                    <img src="images/icons/gray-2.svg">
-                    <p>Прямые рейсы<br> во все крупные города мира</p>
-                </div>
-                <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center justify-content-center my-5">
-                    <img src="images/icons/gray-3.svg">
-                    <p>14 миль<br> белых песчаных пляжей</p>
-                </div>
-                <div class="col-md-3 col-sm-6 d-flex flex-column align-items-center justify-content-center my-5">
-                    <img src="images/icons/gray-4.svg">
-                    <p>Надежная охрана<br> территории 24 часа</p>
-                </div>
-            </div>
+    <section class="plan" itemscope itemtype="https://schema.org/Accommodation">
+  <div class="container">
+    <h1 class="text-white text-center w-100 py-5" itemprop="name">Планировка квартир</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center pb-4" itemprop="floorPlan" itemscope itemtype="https://schema.org/FloorPlan">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+          <img src="images/pictures/plan-1.svg" width="80%" alt="Планировка квартиры вариант 1" itemprop="image">
         </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 my-5 d-flex flex-column justify-content-between">
-                    <h1 class="text-white">О нас</h1>
-                    <h2 class="text-white">Непревзойденное место<br> расположения</h2>
-                    <p class="text-white">Puerto Cancun, расположенный в самом популярном туристическом месте в Мексике, в одном из районов, который, по мнению журнала Forbes, изменит Мексику — это место, где море и город сливаются в самый эксклюзивный образ жизни, окружен впечатляющей природой с более чем 18-километровой береговой линией, сочетающей элегантность с разнообразными уникальными впечатлениями от шопинга, гастрономии, культурных и развлекательных мероприятий.</p>
-                    <img src="images/pictures/about-second.svg" width="100%">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column align-items-center justify-content-center my-5">
-                    <img src="images/pictures/about-first.svg"  width="100%"  height="600">
-                   
-                </div>
-            </div>
+        <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+          <img src="images/pictures/plan-2.svg" width="80%" alt="Планировка квартиры вариант 2" itemprop="image">
         </div>
-    </section>
-    <section class="apartments">
-        <div class="container">
-            <div class="row">
-        
-                <div class="fanbox p-0">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="images/pictures/swiper-1.svg" alt="Фото 1"></div>
-                            <div class="swiper-slide"><img src="images/pictures/swiper-2.svg" alt="Фото 2"></div>
-                            <div class="swiper-slide"><img src="images/pictures/swiper-3.svg" alt="Фото 3"></div>
-                            <div class="swiper-slide"><img src="images/pictures/swiper-4.svg" alt="Фото 3"></div>
-                        </div>
-                        <div class="swiper-buttons">
-                            <div class="swiper-button-next custom-next"></div>
-                            <div class="swiper-button-prev custom-prev"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12 my-4"></div>
-            
-                <div class="col-md-6 col-sm-12 my-4">
-                    <h1 class="text-white px-3">Комфортабельные апартаменты</h1>
-                    <h2 class="text-white p-3">Квартиры на берегу моря в <br> центре Канкуна от $100.000</h2>
-                    <ul class="text-white">
-                        <li>5 минут пешком до моря</li>
-                        <li>2 мин пешком до Торгового центра Puerto Cancun</li>
-                        <li>Лучшее местоположение в отельной зоне Канкуна</li>
-                        <li>Частный доступ к Beach Club</li>
-                        <li>Охрана територии 24 часа </li>
-                        <li>Возможность администрировать вашу квартиру (сдача в оренду) во время вашего отсутсвия</li>
-                        <li>Инвистиции которые ростут с каждым годом</li>
-                    </ul>
-                    <button class="btn btn-about text-white m-3 px-5">Подробнее</button>
-                   
-                </div>
-            </div>
+        <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+          <img src="images/pictures/plan-3.svg" width="80%" alt="Планировка квартиры вариант 3" itemprop="image">
         </div>
-    </section>
-    <section class="plan">
-        <div class="container">
-            <h1 class="text-white text-center w-100 py-5">Планировка квартир</h1>
-            <div class="d-flex flex-column align-items-center justify-content-center pb-4">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-                        <img src="images/pictures/plan-1.svg" width="80%">
-                    </div>
-                    <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-                        <img src="images/pictures/plan-2.svg" width="80%">
-                    </div>
-                    <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-                        <img src="images/pictures/plan-3.svg" width="80%">
-                    </div>
-                    <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
-                        <img src="images/pictures/plan-4.svg" width="80%">
-                    </div>
-                </div>
-                <button class="btn btn-about text-white m-3 px-5">Смотреть планировку</button>
-            </div>
-            
+        <div class="col-md-6 col-sm-12 my-4 d-flex justify-content-center">
+          <img src="images/pictures/plan-4.svg" width="80%" alt="Планировка квартиры вариант 4" itemprop="image">
         </div>
-    </section>
-    <section class="beach-club">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-md-5 col-sm-12 my-5 d-flex flex-column justify-content-between">
-                    <h1 class="text-white">Beach Club</h1>
-                    <h2 class="text-white">Живи морем</h2>
-                    <p class="text-white">Пляжный клуб с бесконечным белым песком предлагает вам идеальные условия для полного единения с природой, доступ к морю, площадки для занятий спортом, а также помещения для проведения мероприятий.</p>
-                    <p class="text-white"><b>Деятельность:</b></p>
-                    <ul>
-                        <li>Каяки и доски для гребли с веслом</li>
-                        <li>Пляжный волейбол</li>
-                        <li>Йога-палуба</li>
-                        <li>Пляжный спортзал</li>
-                        <li>Игры на свежем воздухе для детей</li>
-                    </ul>
-                    <p><b class="text-white">Пляжные услуги:</b></p>
-                    <ul>
-                        <li>Ресторан</li>
-                        <li>Wi-Fi на всей территории</li>
-                        <li>Семейные и взрослые бассейны</li>
-                        <li>Ванные комнаты и гардеробные</li>
-                        <li>Шезлонги и кабинки на пляже</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between">
+      </div>
+      <button class="btn btn-about text-white m-3 px-5" itemprop="url">Смотреть планировку</button>
+    </div>
+  </div>
+</section>
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="photo-1 no-desk"></section>
-    <section class="shopping">
-        <div class="container">
-            <div class="row justify-content-start">
-                <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between">
+<section class="beach-club" itemscope itemtype="https://schema.org/TouristAttraction">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-5 col-sm-12 my-5 d-flex flex-column justify-content-between">
+        <h1 class="text-white" itemprop="name">Beach Club</h1>
+        <h2 class="text-white">Живи морем</h2>
+        <p class="text-white" itemprop="description">
+          Пляжный клуб с бесконечным белым песком предлагает идеальные условия для единения с природой, доступ к морю, спортплощадки и помещения для мероприятий.
+        </p>
+        <p class="text-white"><b>Деятельность:</b></p>
+        <ul itemprop="amenityFeature" itemscope itemtype="https://schema.org/LocationFeatureSpecification">
+          <li itemprop="name">Каяки и доски для гребли</li>
+          <li itemprop="name">Пляжный волейбол</li>
+          <li itemprop="name">Йога-палуба</li>
+          <li itemprop="name">Пляжный спортзал</li>
+          <li itemprop="name">Детские игры на свежем воздухе</li>
+        </ul>
+        <p><b class="text-white">Пляжные услуги:</b></p>
+        <ul itemprop="amenityFeature" itemscope itemtype="https://schema.org/LocationFeatureSpecification">
+          <li itemprop="name">Ресторан</li>
+          <li itemprop="name">Wi-Fi на всей территории</li>
+          <li itemprop="name">Семейные и взрослые бассейны</li>
+          <li itemprop="name">Ванные комнаты и гардеробные</li>
+          <li itemprop="name">Шезлонги и кабинки</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between"></div>
+    </div>
+  </div>
+</section>
 
-                </div>
-                <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between">
-                    <h1 class="text-white px-2">Шоппинг</h1>
-                    <h2 class="text-white px-2">Торговый центр Marina Puerto<br> Cancun</h2>
-                    <p class="text-white px-2">Найдите свои любимые магазины. Marina Puerto Cancun, предлагающий широкий выбор лучших брендов, является излюбленным местом шоппинга в Канкуне, где вы найдете новинки моды, аксессуаров, красоты, товаров для дома и многого другого, предлагая вам непревзойденные впечатления от шопинга.</p>
-                    <p class="text-white px-2"><b>Гастрономия</b></p>
-                    <p class="text-white px-2">Посетите каждый из наших восхитительных ресторанов, посетите их террасы с лучшими видами и насладитесь непревзойденными вкусами, которые они предлагают.</p>
-                    <p><b class="text-white px-2">Развлечения</b></p>
-                    <p class="text-white px-2">С трассой на высоте 18 м над уровнем моря у нас есть первая зиплайн в торговом центре, 10 метров чистого удовольствия в нашей башне для скалолазания, музыкальные мероприятия, эксклюзивные акции и открытые пространства.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="gallery">
-        <div class="container">
-            <h1 class="text-center text-white py-5">Галерея</h1>
-            <div class="swiper mySwiperGallery pb-5">
-                <div class="swiper-wrapper custom-slider">
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-1.svg" alt="Image 1"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-2.svg" alt="Image 2"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-3.svg" alt="Image 3"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-4.svg" alt="Image 4"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-5.svg" alt="Image 1"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-6.svg" alt="Image 2"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-7.svg" alt="Image 3"></div>
-                    <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-8.svg" alt="Image 4"></div>
-                </div>
-                <div class="swiper-buttons">
-                    <div class="swiper-button-next rgt"></div>
-                    <div class="swiper-button-prev lft"></div>
-                </div>
-            </div>
+<section class="shopping" itemscope itemtype="https://schema.org/ShoppingCenter">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between"></div>
+      <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between">
+        <h1 class="text-white px-2" itemprop="name">Шоппинг</h1>
+        <h2 class="text-white px-2">Торговый центр Marina Puerto Cancun</h2>
+        <p class="text-white px-2" itemprop="description">
+          Marina Puerto Cancun предлагает широкий выбор брендов, магазинов моды, аксессуаров, красоты, товаров для дома и гастрономии.
+        </p>
+        <p class="text-white px-2"><b>Гастрономия:</b> Рестораны с террасами и уникальными блюдами.</p>
+        <p class="text-white px-2"><b>Развлечения:</b> Зиплайн, башня для скалолазания, музыкальные мероприятия и открытые пространства.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        </div>
-    </section>
-    <section class="photo-2 no-desk"></section>
-    <section class="project">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-md-5 col-sm-12 my-5 d-flex flex-column justify-content-between">
-                    <h1 class="text-white">Zen Gardens</h1>
-                    <h2 class="text-white">Обзор проекта</h2>
-                    <p class="text-white">Проект Zen Gardens является результатом тщательного анализа рынка, который подтверждает большой спрос и необходимость внедрения комплексных разработок в районах, представляющих большую ценность, имея в качестве своей главной привлекательности универсальное, современное, динамичное сообщество, окруженное природой и обладающее захватывающим дизайном</p>
-                    <p class="text-white"><b>Удобства:</b></p>
-                    <ul>
-                        <li>Круглосуточная охрана</li>
-                        <li>Озеро в форме ската</li>
-                        <li>Танцующие Фонтаны</li>
-                        <li>Эксклюзивный ландшафт</li>
-                        <li>Парковка</li>
-                        <li>Молл</li>
-                    </ul>
-                    
-                </div>
-                <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between"></div>
-            </div>
-        </div>
-    </section>
-    <section class="video">
-        <div class="video-container">
-            <video id="promo-video" class="video" poster="images/video/preview.svg">
-                <source src="images/video/home_page_video.mp4" type="video/mp4">
-                Ваш браузер не поддерживает видео.
-            </video>
-            <button class="play-btn" id="playButton">
-                <img src="images/video/play.svg" alt="Play">
-            </button>
-        </div>        
-    </section>
-    <footer class="footer">
-        <div class="container position-relative">
-            <button id="scroll-up" class="btn btn-up"><i class="bi bi-chevron-up"></i></button>
-            <div class="footer-logo">
-                <img src="images/gen_logo.svg" alt="Zen Gardens">
-            </div>
-            <nav class="footer-menu">
-                <ul>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Квартиры</a></li>
-                    <li><a href="#">Планировки</a></li>
-                    <li><a href="#">Текущая ситуация</a></li>
-                    <li><a href="#">Галерея</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="footer-contacts">
-                <p><img src="images/icons/email.svg" alt="Email"> zen-garden@gmail.com</p>
-                <p><img src="images/icons/phone.svg" alt="Phone"> +52 000 000 0000</p>
-                <p><img src="images/icons/location.svg" alt="Location">  
-                    Av. Bonampak, Kukulcan Blvd, Zona Hotelera, 77500  
-                    Cancún, Q.R., Mexico
-                </p>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2024 Zen Gardens. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+<section class="gallery" itemscope itemtype="https://schema.org/ImageGallery">
+  <div class="container">
+    <h1 class="text-center text-white py-5" itemprop="name">Галерея</h1>
+    <div class="swiper mySwiperGallery pb-5" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+      <div class="swiper-wrapper custom-slider">
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-1.svg" alt="Вид на комплекс Zen Gardens 1" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-2.svg" alt="Вид на комплекс Zen Gardens 2" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-3.svg" alt="Вид на комплекс Zen Gardens 3" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-4.svg" alt="Вид на комплекс Zen Gardens 4" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-5.svg" alt="Вид на комплекс Zen Gardens 5" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-6.svg" alt="Вид на комплекс Zen Gardens 6" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-7.svg" alt="Вид на комплекс Zen Gardens 7" itemprop="contentUrl"></div>
+        <div class="swiper-slide custom-swiper-slide"><img src="images/pictures/gallery-8.svg" alt="Вид на комплекс Zen Gardens 8" itemprop="contentUrl"></div>
+      </div>
+      <div class="swiper-buttons">
+        <div class="swiper-button-next rgt"></div>
+        <div class="swiper-button-prev lft"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <section class="project" itemscope itemtype="https://schema.org/RealEstateProject">
+  <div class="container">
+    <div class="row justify-content-end">
+      <div class="col-md-5 col-sm-12 my-5 d-flex flex-column justify-content-between">
+        <h1 class="text-white" itemprop="name">Zen Gardens</h1>
+        <h2 class="text-white">Обзор проекта</h2>
+        <p class="text-white" itemprop="description">
+          Проект Zen Gardens — результат тщательного анализа рынка, подтверждающего спрос на комплексные разработки. Он сочетает универсальное, современное и динамичное сообщество с уникальным дизайном и природой.
+        </p>
+        <p class="text-white"><b>Удобства:</b></p>
+        <ul itemprop="amenityFeature" itemscope itemtype="https://schema.org/LocationFeatureSpecification">
+          <li itemprop="name">Круглосуточная охрана</li>
+          <li itemprop="name">Озеро в форме ската</li>
+          <li itemprop="name">Танцующие фонтаны</li>
+          <li itemprop="name">Эксклюзивный ландшафт</li>
+          <li itemprop="name">Парковка</li>
+          <li itemprop="name">Молл</li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-sm-12 my-5 d-flex flex-column justify-content-between"></div>
+    </div>
+  </div>
+</section>
+
+<section class="video" itemscope itemtype="https://schema.org/VideoObject">
+  <div class="video-container">
+    <meta itemprop="name" content="Видео-презентация Zen Gardens">
+    <meta itemprop="description" content="Краткий обзор проекта Zen Gardens в формате видео">
+    <video id="promo-video" class="video" poster="images/video/preview.svg" itemprop="contentUrl">
+      <source src="images/video/home_page_video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <button class="play-btn" id="playButton">
+      <img src="images/video/play.svg" alt="Кнопка воспроизведения видео" itemprop="thumbnailUrl">
+    </button>
+  </div>
+</section>
+
+<footer class="footer" itemscope itemtype="https://schema.org/Organization">
+  <div class="container position-relative">
+    <button id="scroll-up" class="btn btn-up" aria-label="Наверх">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+    <div class="footer-logo">
+      <img src="images/gen_logo.svg" alt="Логотип Zen Gardens" itemprop="logo">
+    </div>
+
+    <nav class="footer-menu">
+      <ul>
+        <li><a href="index.html" itemprop="url">О нас</a></li>
+        <li><a href="#" itemprop="url">Квартиры</a></li>
+        <li><a href="layout.html" itemprop="url">Планировки</a></li>
+        <li><a href="current-view.html" itemprop="url">Текущая ситуация</a></li>
+        <li><a href="#" itemprop="url">Галерея</a></li>
+        <li><a href="#" itemprop="url">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-contacts">
+      <p>
+        <img src="images/icons/email.svg" alt="Email">
+        <a href="mailto:zen-garden@gmail.com" itemprop="email">zen-garden@gmail.com</a>
+      </p>
+      <p>
+        <img src="images/icons/phone.svg" alt="Телефон">
+        <a href="tel:+520000000000" itemprop="telephone">+52 000 000 0000</a>
+      </p>
+      <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <img src="images/icons/location.svg" alt="Адрес">
+        <span itemprop="streetAddress">Av. Bonampak, Kukulcan Blvd, Zona Hotelera</span>,  
+        <span itemprop="postalCode">77500</span>  
+        <span itemprop="addressLocality">Cancún</span>,  
+        <span itemprop="addressRegion">Q.R.</span>,  
+        <span itemprop="addressCountry">Mexico</span>
+      </p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 <span itemprop="name">Zen Gardens</span>. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.1/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
