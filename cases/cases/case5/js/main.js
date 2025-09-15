@@ -28,21 +28,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const sidebar = document.getElementById('sidebar');
 const toggleBtn = document.getElementById('toggle-btn');
-const toggleIcon = toggleBtn.querySelector('img'); // Иконка кнопки для десктопа
-const mobileMenuBtn = document.getElementById('mobile-menu-btn'); // Кнопка для мобильного меню
-const sidebarMenu = document.getElementById('sidebar-menu'); // Меню на мобильной версии
+const toggleIcon = toggleBtn.querySelector('img'); 
+const mobileMenuBtn = document.getElementById('mobile-menu-btn'); 
+const sidebarMenu = document.getElementById('sidebar-menu');
 
-// Обработчик клика для переключения меню на десктопе
+
 toggleBtn.addEventListener('click', () => {
     if (window.innerWidth > 768) {
-        // Только на десктопе разрешаем сворачивать меню
+     
         sidebar.classList.toggle('collapsed');
         
         // Обновляем иконку в зависимости от состояния
         if (sidebar.classList.contains('collapsed')) {
-            toggleIcon.src = 'images/show-sidebar-horiz.png'; // Иконка свернутого состояния
+            toggleIcon.src = 'images/show-sidebar-horiz.png';
         } else {
-            toggleIcon.src = 'images/hide-sidebar-horiz.png'; // Иконка развернутого состояния
+            toggleIcon.src = 'images/hide-sidebar-horiz.png'; 
         }
     }
 });
@@ -135,7 +135,6 @@ const cryptoChart = new Chart(ctx, {
   options: options,
 });
 
-// Функция для обновления оси X в зависимости от ширины экрана
 function updateChartForMobile(chart) {
   if (window.innerWidth <= 768) { // Условие для мобильной версии
     chart.options.scales.x.display = false; // Отключить ось X
@@ -145,10 +144,8 @@ function updateChartForMobile(chart) {
   chart.update(); // Применить изменения
 }
 
-// Обновить график при загрузке страницы
 updateChartForMobile(cryptoChart);
 
-// Обновить график при изменении размера окна
 window.addEventListener('resize', () => {
   updateChartForMobile(cryptoChart);
 });

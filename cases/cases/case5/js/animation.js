@@ -8,30 +8,48 @@ window.onload = function () {
         return;
     }
 
-    let imgWidth = images[0].offsetWidth;
-    let gap = 10; 
-    let speed = 2; 
-    let totalWidth = (imgWidth + gap) * images.length;
+    let gap = 20;  // расстояние между картинками
+    let speed = 1.5; // скорость движения (px за кадр)
 
-    images.forEach((img) => {
-        let clone = img.cloneNode(true);
-        content.appendChild(clone);
-    });
+    // Функция клонирования картинок, чтобы заполнить ширину экрана
+    function fillContent() {
+        let totalWidth = content.scrollWidth;
+        while (totalWidth < window.innerWidth * 2) { 
+            images.forEach((img) => {
+                let clone = img.cloneNode(true);
+                content.appendChild(clone);
+            });
+            totalWidth = content.scrollWidth;
+        }
+    }
 
-    images = document.querySelectorAll(".scroll-img");
+    fillContent();
 
     let position = 0;
 
     function moveImages() {
         position -= speed;
-        if (position <= -totalWidth) {
+
+        if (Math.abs(position) >= content.scrollWidth / 2) {
             position = 0;
         }
+
         content.style.transform = `translateX(${position}px)`;
         requestAnimationFrame(moveImages);
     }
 
     moveImages();
+
+    // При ресайзе экрана перезаполняем контент
+    window.addEventListener("resize", () => {
+        content.innerHTML = "";
+        images.forEach((img) => {
+            content.appendChild(img.cloneNode(true));
+        });
+        images = document.querySelectorAll(".scroll-img");
+        fillContent();
+        position = 0;
+    });
 };
 
 document.querySelector(".btn-up").addEventListener("click", function () {
@@ -44,21 +62,24 @@ document.querySelector(".btn-up").addEventListener("click", function () {
 $(document).ready(function() {
     console.log("jQuery работает!");
 
-    
     $('#openMenu').on('click', function() {
         $('#mobileMenu').collapse('show');
     });
 
-  
     $('#closeMenu').on('click', function() {
-        $('#mobileMenu').removeClass('show');
+        $('#mobileMenu').collapse('hide');  
     });
-    
-   
+
+ 
     $(window).on('click', function(event) {
         if (!$(event.target).closest('#mobileMenu').length && !$(event.target).is('#openMenu')) {
             $('#mobileMenu').collapse('hide');
         }
+    });
+
+    
+    $('#mobileMenu .menu-link').on('click', function() {
+        $('#mobileMenu').collapse('hide');
     });
 });
 
@@ -66,7 +87,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     $('#closeModal').on('click', function() {
-        $('#contactModal').modal('hide'); // Закрывает модальное окно правильно
+        $('#contactModal').modal('hide'); 
     });
 });
 
