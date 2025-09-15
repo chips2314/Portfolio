@@ -40,7 +40,6 @@ window.onload = function () {
 
     moveImages();
 
-    // При ресайзе экрана перезаполняем контент
     window.addEventListener("resize", () => {
         content.innerHTML = "";
         images.forEach((img) => {
