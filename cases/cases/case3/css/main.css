@@ -173,6 +173,11 @@ section.what-is{
     font-weight: 700;
     font-size: 18px;
   }
+  .menu-button:focus{
+      background-color: #046A38 !important;
+    border: 1px solid #BBFBDB !important;
+    box-shadow: none !important;
+  }
 
   .logo{
     width: 6vw;
