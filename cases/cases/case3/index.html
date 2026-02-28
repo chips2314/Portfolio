@@ -73,7 +73,7 @@
                   <img src="image/authorization/captcha.svg" height="57" alt="Captcha verification">
                 </div>
                 <div class="col-md-2 col-xs-2 p-0 d-flex justify-content-end">
-                  <button class="btn px-1 mr-1" type="button">
+                  <button data-toggle="modal" data-target="#emeraldModal" class="btn px-1 mr-1" type="button">
                     <img src="image/authorization/arrow.svg" alt="Reload captcha">
                   </button>
                 </div>
@@ -83,13 +83,13 @@
               </div>
             </div>
             <div class="col-md-6">
-              <button type="submit" class="btn btn-success w-100 mt-2">Send</button>
+              <button data-toggle="modal" data-target="#emeraldModal" class="btn btn-success w-100 mt-2">Send</button>
             </div>
           </div>
         </form>
 
         <div class="text-center mt-3">
-          <p class="content mb-3">By registering, you agree to the <a href="#">Privacy Policy</a></p>
+          <p class="content mb-3">By registering, you agree to the <a data-toggle="modal" data-target="#emeraldModal">Privacy Policy</a></p>
           <a href="index.html">← Back to website</a>
         </div>
 
@@ -100,91 +100,9 @@
     </div>
   </div>
 
-  <div id="STBUX" class="modal-custom">
-    <div class="stbux">
-      <div class="card buy p-4">
-        <button class="close-btn-2" aria-label="Close"><i class="bi bi-x"></i></button>
-        <h3 class="text-center card-title">Buy STBUX Before Price Rises</h3>
-        
-        <div class="row text-center mt-4">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="container">
-              <div class="row flex-nowrap justify-content-center text-center">
-                <div class="col-auto metrics">
-                  <p class="mb-0 time-number">03</p>
-                  <p class="word-break">Days</p>
-                </div>
-                <div class="col-auto metrics">
-                  <p class="mb-0 time-number">18</p>
-                  <p class="word-break">Hours</p>
-                </div>
-                <div class="col-auto metrics">
-                  <p class="mb-0 time-number">02</p>
-                  <p class="word-break">Minutes</p>
-                </div>
-                <div class="col-auto metrics">
-                  <p class="mb-0 time-number">34</p>
-                  <p class="word-break">Seconds</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="mt-4 text-center balance">
-              <p>STBUX Balance</p>
-              <p>SOL: 0.381 SOL / $80.11</p>
-              <div class="progress my-2">
-                <div class="progress-bar" role="progressbar">SALE: 0%</div>
-              </div>
-              <p>Purchased: 0 STBUX</p>
-              <p>Stakeable: 0 STBUX</p>
-              <div>
-                <img src="image/token.svg" alt="STBUX Token Icon" class="my-2" style="width: 50px;">
-              </div>
-              <p>Total Tokens: 10B</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="col-12">
-              <div class="input-group position-relative">
-                <input type="text" id="solanaAddress" class="form-control" placeholder="Solana Address">
-                <div class="input-group-append">
-                  <span class="input-group-text" id="solanainput">
-                    <img src="image/icons/solana.svg" alt="Solana logo">
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 mt-3 mt-md-0">
-              <label class="w-100 text-left" for="receiveAmount">Receive</label>
-              <div class="input-group">
-                <input type="text" id="receiveAmount" class="form-control" placeholder="0">
-                <div class="input-group-append">
-                  <span class="input-group-text">
-                    <img src="image/token.svg" alt="STBUX logo">
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-block btn-success" id="openModal-2">Connect Your Wallet</button>
-            </div>
-            <div class="col-12 mt-3 mt-md-0">
-              <button class="btn btn-block btn-success">
-                <img src="image/icons/solana.svg" alt="Buy with Solana" width="30"> Get STBUX with SOL
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <a href="#">Don't have a wallet?</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
 <div id="walletModal" class="modal-custom">
     <div class="modal-content-custom">
-        <button class="close-btn-2" aria-label="Close wallet modal"><i class="bi bi-x"></i></button>
+        <button  class="close-btn-2" aria-label="Close wallet modal"><i class="bi bi-x"></i></button>
         <p class="mt-2 mb-4"><strong>Connect Wallet</strong></p>
         <button class="wallet-btn phantom" aria-label="Connect with Phantom Wallet"> 
             <img src="image/icons/phantom.svg" alt="Phantom Wallet logo">
@@ -208,7 +126,9 @@
 </div>
 
 <main>
+    
     <section class="home-page"> 
+        <canvas id="particles-bg"></canvas>
         <div class="bg-siren"></div>
         <div class="mobile-container">
             <nav class="navbar navbar-dark" role="navigation">
@@ -225,16 +145,16 @@
             <button class="close-btn" id="closeMenu" aria-label="Close mobile menu"><i class="bi bi-x"></i></button>
             <div class="menu-container">
                 <div class="d-flex align-items-center justify-content-between w-50 mobile_adaptive" id="adaptive-1">
-                    <a href="#" class="menu-link">What is STBUX?</a>
-                    <a href="#" class="menu-link">Roadmap</a>
-                    <a href="#" class="menu-link">How To Buy</a>
+                    <a href="#what-is" class="menu-link">What is STBUX?</a>
+                    <a href="#roadmap" class="menu-link">Roadmap</a>
+                    <a href="#how" class="menu-link">How To Buy</a>
                 </div>
                 <div class="menu-logo text-primary">
                     <img class="logo" src="image/logo.svg" alt="Starbucks Token logo">
                 </div>
                 <div class="d-flex align-items-center justify-content-between w-50 mobile_adaptive" id="adaptive-2">
-                    <a href="#" class="menu-link">STBUX Economy</a>
-                    <a href="#" class="menu-link">FAQ</a>
+                    <a href="#economy" class="menu-link">STBUX Economy</a>
+                    <a href="#faq" class="menu-link">FAQ</a>
                     <a href="#" class="btn btn-primary menu-button" data-toggle="modal" data-target="#reg">Sign up</a>
                 </div>
             </div>
@@ -252,29 +172,35 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="container">
                                 <div class="row flex-nowrap justify-content-center text-center">
-                                    <div class="col-auto metrics">
-                                        <p class="mb-0 time-number">03</p>
-                                        <p class="word-break">Days</p>
-                                    </div>
-                                    <div class="col-auto metrics">
-                                        <p class="mb-0 time-number">18</p>
-                                        <p class="word-break">Hours</p>
-                                    </div>
-                                    <div class="col-auto metrics">
-                                        <p class="mb-0 time-number">02</p>
-                                        <p class="word-break">Minutes</p>
-                                    </div>
-                                    <div class="col-auto metrics">
-                                        <p class="mb-0 time-number">34</p>
-                                        <p class="word-break">Seconds</p>
-                                    </div>
+                                    <div class="row flex-nowrap justify-content-center text-center">
+                <div class="col-auto metrics">
+                <p class="mb-0 time-number" id="days">00</p>
+                <p class="word-break">Days</p>
+                </div>
+
+                <div class="col-auto metrics">
+                <p class="mb-0 time-number" id="hours">00</p>
+                <p class="word-break">Hours</p>
+                </div>
+
+                <div class="col-auto metrics">
+                <p class="mb-0 time-number" id="minutes">00</p>
+                <p class="word-break">Minutes</p>
+                </div>
+
+                <div class="col-auto metrics">
+                <p class="mb-0 time-number" id="seconds">00</p>
+                <p class="word-break">Seconds</p>
+                </div>
+              </div>
                                 </div>
                             </div>
                             <div class="mt-4 text-center balance">
                                 <p>STBUX Balance</p>
                                 <p>SOL: 0.381 SOL / $80.11</p>
                                 <div class="progress my-2">
-                                    <div class="progress-bar" role="progressbar">SALE: 0%</div>
+                                    <div class="progress-bar" role="progressbar"></div>
+                                    <p class="text-white position-absolute mb-0 d-flex">SALE: 20%</p>
                                 </div>
                                 <p>Purchased: 0 STBUX</p>
                                 <p>Stakeable: 0 STBUX</p>
@@ -282,6 +208,9 @@
                                     <img src="image/token.svg" alt="STBUX Token symbol" class="my-2" style="width: 50px;">
                                 </div>
                                 <p>Total Tokens: 10B</p>
+                                <div class="text-center mt-3">
+                                    <a data-toggle="modal" data-target="#emeraldModal" href="#">Don't have a wallet?</a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
@@ -307,23 +236,21 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-block btn-success" id="openModal" aria-label="Connect your crypto wallet">Connect Your Wallet</button>
+                                <button class="btn btn-block btn-success" data-toggle="modal" data-target="#emeraldModal" aria-label="Connect your crypto wallet">Connect Your Wallet</button>
                             </div>
                             <div class="col-12 mt-3 mt-md-0">
-                                <button class="btn btn-block btn-success" aria-label="Buy STBUX with Solana">
+                                <button class="btn btn-block btn-success" data-toggle="modal" data-target="#emeraldModal" aria-label="Buy STBUX with Solana">
                                     <img src="image/icons/solana.svg" alt="Pay with Solana" width="30"> Get STBUX with SOL
                                 </button>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <a href="#">Don't have a wallet?</a>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
 
 
-            <section class="what-is" itemscope itemtype="https://schema.org/Product"> 
+            <section class="what-is" id="what-is" itemscope itemtype="https://schema.org/Product"> 
                 <div class="title text-black">
                     <h1 itemprop="name">What is STBUX?</h1>
                 </div>
@@ -401,12 +328,12 @@
                 </div>
             </section>
 
-            <section class="roadmap" itemscope itemtype="https://schema.org/CreativeWork"> 
+            <section class="roadmap" id="roadmap" itemscope itemtype="https://schema.org/CreativeWork"> 
                 <div class="title text-green">
                     <h1 itemprop="headline">STBUX Roadmap</h1>
                 </div>
                 <div class="container">
-                    <div class="row w-100">
+                    <div class="row">
                         <div class="col-lg-6 col-md-4 d-flex justify-content-center">
                             <img src="image/phone.svg" alt="STBUX roadmap illustration" itemprop="image">
                         </div>
@@ -566,7 +493,7 @@
                 </div>
             </section>
 
-            <section class="economy" itemscope itemtype="https://schema.org/HowTo"> 
+            <section class="economy" id="how" itemscope itemtype="https://schema.org/HowTo"> 
                 <div class="title text-black margin-2">
                     <h1 class="my-3 text-center pt-3" itemprop="name">How to Buy STBUX Tokens</h1>
                     <h3 class="fs-3 text-center" itemprop="description">
@@ -621,7 +548,7 @@
                     </div>
 
        
-                    <div class="title text-black" itemscope itemtype="https://schema.org/Product">
+                    <div id="economy" class="title text-black" itemscope itemtype="https://schema.org/Product">
                         <h1 class="mt-4" itemprop="name">STBUX Economy</h1>
                         <p class="fs-4">
                             <strong>Total supply: 
@@ -690,7 +617,7 @@
                 </div>
             </section>
 
-            <section class="faq position-relative" itemscope itemtype="https://schema.org/FAQPage"> 
+            <section class="faq position-relative" id="faq" itemscope itemtype="https://schema.org/FAQPage"> 
                 <div class="title text-green">
                     <h1 class="mt-4">FAQ</h1>
                 </div>
@@ -835,7 +762,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center w-100 mt-5">
+                <div class="d-flex justify-content-center w-100 mt-5 mb-2">
                     <div class="footer">
                         <div class="text d-flex justify-content-center align-items-center h-100">
                             <p class="text-white">©2025 StarbucksToken. All rights reserved.</p>
@@ -847,7 +774,26 @@
 
 
         </main>
-
+<div class="modal fade" id="emeraldModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-centered modal-md" role="document">
+    <div class="modal-content emerald-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-white">Это демонстрационная версия сайта</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-white">
+        <p>Полная версия сайта находится на зарубежных серверах, недоступных в России.<br>
+            Приносим свои извинения:(
+        </p>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
@@ -857,6 +803,7 @@
 
 
     <script src="js/main.js" defer></script>
+    <script src="js/timer.js" defer></script>
     
 </body>
 </html>

@@ -107,10 +107,13 @@
 }
 
 @media (max-width: 992px){
-    .swiper-container {
-        width: 395px;
-        overflow: hidden;
-      }
+
+    .bg-siren {
+        background-image: url(../image/bg/sirena.svg);
+        background-position: 70% 0%;
+        background-size: contain;
+    }
+
       .card-roadmap {
         width: 395px;
     }
@@ -215,38 +218,15 @@
         display: flex;
         justify-content: center;
       }
-      .roadmap .col-md-8{
-        align-items: end !important;
-      }
+
       .roadmap .col-lg-6 img{
         max-width: 150%;
-        margin-left: 40px;
+ 
       }
       .container{
         max-width: 780px;
       }
-      .bg-siren{
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        background-image: 
-            url(../image/bg/sirena.svg), 
-            url(../image/bg/dots.png),
-            url(../image/bg/light.png);
-        background-position: 
-            top center,
-            center,
-            top center;
-        background-repeat: 
-            no-repeat,
-            no-repeat,
-            no-repeat;
-        background-size: 
-            140vw 140vh,
-            100vw 100vh,
-            cover
-            ;
-    }
+     
     section.home-page{
         min-height: 140vh;
     }
@@ -362,16 +342,6 @@
         display: none;
     }
 
-    .swiper-container {
-        width: 550px;
-        position: relative;
-        left: 55px;
-        max-height: 600px;
-      }
-      .chevrons{
-        position: relative;
-        left: 30px 
-      }
       .card-roadmap {
         width: 545px;
     }
@@ -388,7 +358,7 @@
       }
       .roadmap .col-lg-6 img{
         width: 70%;
-        margin-left: 40px;
+ 
       }
       .metrics {
         min-width: 17.3vw;
@@ -438,11 +408,7 @@
 @media (max-width: 560px){
     .swiper-container {
         width: 360px;
-        left: -6%;
-      }
-      .chevrons{
-        position: relative;
-        left: 30px 
+
       }
       .card-roadmap {
         width: 360px;
@@ -480,9 +446,7 @@
 
 
 @media (max-width: 470px){
-    .swiper-container {
-        left: 3%;
-      }
+  
       .mobile_captcha .col-xs-2{
         width: 5%;
         padding: 0 10px !important;
@@ -498,7 +462,5 @@
 }
 
 @media (max-width: 400px){
-    .swiper-container {
-        left: 9%;
-      }
+
 }
